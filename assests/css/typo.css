@@ -12,7 +12,7 @@ h4 {
 } */
 
 body {
-    font-family: Raleway;
+    font-family: 'Lexend Zetta', sans-serif;
 }
 
 
@@ -47,6 +47,7 @@ body {
 h1 {
     /* = 32px */
     font-size: 3.2rem;
+    font-family: 'Tiro Tamil', serif;
 }
 
 @media (min-width: 650px) {
@@ -85,15 +86,7 @@ h2 {
 
 h3 {
     /* = 18px */
-    /* font-size: 1.8rem; */
-    font-family: 'Viga';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 2rem;
-    line-height: 30px;
-
-    color: #856700;
-
+    font-size: 1.8rem;
 
 }
 
@@ -124,7 +117,7 @@ h3 {
 }
 
 
-label {
+/* label {
     font-family: Raleway;
     font-size: 1.4rem;
 }
@@ -140,5 +133,5 @@ label {
     label{
         font-size: 2rem;
     }
-}
+} */
 

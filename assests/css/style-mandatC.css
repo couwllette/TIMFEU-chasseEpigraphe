@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/**
+ * @author: Cloé Ouellette
+ */
+
+/* IMPORTER D'ABORD LES POLICES DE CARACTÈRES */
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta&family=Tiro+Tamil&display=swap');
+
+/* IMPORTER LES FICHIERS CSS */
+@import url(normalize.css);
+@import url(utilitaires.css);
+@import url(base.css);
+@import url(typo.css);
+@import url(grille.css);
+
