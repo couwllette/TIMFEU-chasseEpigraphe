@@ -14,3 +14,55 @@
 @import url(typo.css);
 @import url(grille.css);
 
+
+nav{
+    background-color:#EFFBDD ;
+    border: #1D3D23 1px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    margin-left:auto;
+    justify-content: space-evenly;
+}
+
+nav li{
+    font-size: 1.2rem;
+    list-style: none;
+    text-align: center;
+}
+.lien--actif{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: #1D3D23;
+}
+
+.divLogo{
+    margin-left:220px;
+}
+
+.divNavPrincipale{
+    margin-right: 220px;
+}
+
+
+
+
+
+
+h1{
+    background-color:#EFFBDD ;
+    border: #1D3D23 1px solid;
+    margin-top: 0;
+    padding:100px 0;
+    text-align: center;
+    color:#1D3D23;
+}
