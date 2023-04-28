@@ -22,6 +22,15 @@
     box-sizing: border-box;
 }
 
+.div-conteneur-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.div-conteneur{
+    margin: 0 auto;
+}
 
 /* ------------------------------------------------------------------------------------------------------------------ */
 /* NAVIGATION (NAV) */
@@ -31,8 +40,8 @@
     border: #1D3D23 1px solid;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 50px 50px 50px 25px;
+    justify-content: center;
+    padding: 25px 50px;
 
 
 }
@@ -102,6 +111,7 @@ footer {
     background-color: #1D3D23;
     color: #fff;
     padding: 10px 50px 30px;
+    
 }
 
 .footer-nav {
@@ -114,13 +124,13 @@ footer {
 
 .footer-nav-lien {
     color: #fff;
-
+    font-size: 1.4rem;
     text-decoration: none;
 }
 
 .p-footer {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 5px 0;
 }
 
@@ -149,6 +159,7 @@ footer {
 
 .titre-tableau-jeu {
     margin-bottom: 60px;
+   
     /* margin-left: ; */
 }
 
@@ -231,9 +242,16 @@ footer {
     background-color: #EFFBDD;
     border: #1D3D23 1px solid;
     color: #1D3D23;
-    padding: 50px 50px;
+    padding: 90px 50px;
 }
 
+.p-association{
+    margin-bottom: 60px;
+}
+
+.message-erreur{
+    padding: 100px 0 50px;
+}
 
 .bouton-redirection {
     margin: 10px 0;
@@ -244,7 +262,7 @@ footer {
     border-radius: 5px;
     color: #000000;
     text-align: left;
-    padding-right: 20px;
+    padding: 0 20px ;
 }
 .redirection-lien{
     text-decoration: none;
