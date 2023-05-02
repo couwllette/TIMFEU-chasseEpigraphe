@@ -77,7 +77,7 @@
 /* TITRE PAGE */
 
 
-.titre-page {
+.titre-page, .titre-fiche {
     background-color: #EFFBDD;
     border: #1D3D23 1px solid;
     margin: 0;
@@ -86,6 +86,19 @@
     color: #1D3D23;
 }
 
+.p-copyright-img-titre{
+    text-align: end;
+}
+
+.image-copyright{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+.img-titre-fiche{
+    order: 1;
+}
 
 /* ------------------------------------------------------------------------------------------------------------------ */
 /* FOOTER */
