@@ -68,6 +68,7 @@ h1 {
 h2 {
     /* = 24px */
     font-size: 2.4rem;
+    font-family: 'Tiro Tamil', serif;
 }
 
 @media (min-width: 650px) {

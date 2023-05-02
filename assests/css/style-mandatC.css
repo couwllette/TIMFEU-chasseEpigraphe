@@ -15,54 +15,278 @@
 @import url(grille.css);
 
 
-nav{
-    background-color:#EFFBDD ;
+/* Réinitialisation */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.div-conteneur-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.div-conteneur{
+    margin: 0 auto;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* NAVIGATION (NAV) */
+
+.entete-nav {
+    background-color: #EFFBDD;
     border: #1D3D23 1px solid;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    padding: 25px 50px;
+
 
 }
 
-nav ul {
+.entete-nav-liste {
     display: flex;
     flex-direction: row;
-    margin-left:auto;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav li{
+.entete-nav-item {
     font-size: 1.2rem;
     list-style: none;
     text-align: center;
+    margin: 0 10px;
 }
-.lien--actif{
+
+.lien--actif {
     font-size: 1.6rem;
     font-weight: bold;
 }
-a{
+
+.entete-nav-lien {
     text-decoration: none;
     color: #1D3D23;
 }
 
-.divLogo{
-    margin-left:220px;
-}
-
-.divNavPrincipale{
-    margin-right: 220px;
-}
 
 
 
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* TITRE PAGE */
 
 
-
-h1{
-    background-color:#EFFBDD ;
+.titre-page, .titre-fiche {
+    background-color: #EFFBDD;
     border: #1D3D23 1px solid;
-    margin-top: 0;
-    padding:100px 0;
+    margin: 0;
+    padding: 100px 0;
     text-align: center;
-    color:#1D3D23;
+    color: #1D3D23;
+}
+
+.p-copyright-img-titre{
+    text-align: end;
+}
+
+.image-copyright{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+.img-titre-fiche{
+    order: 1;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* FOOTER */
+
+.menu-sociaux__lien {
+    background-repeat: no-repeat;
+    padding-right: 100px;
+    background-size: contain;
+    font-size: 0;
+    height: 50px;
+    display: block;
+}
+
+.menu-sociaux {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    padding: 53px 0;
+}
+
+footer {
+    background-color: #1D3D23;
+    color: #fff;
+    padding: 10px 50px 30px;
+    
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-evenly;
+    padding: 25px 0 10px;
+}
+
+.footer-nav-lien {
+    color: #fff;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+.p-footer {
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 5px 0;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* PAGE CHASSE AUX ÉPIGRAPHES */
+
+
+/* INFOS JEUX */
+
+.infos-jeu {
+    background-color: #1D3D23;
+    color: #EFFBDD;
+    border: #1D3D23 1px solid;
+    padding: 90px 50px;
+}
+
+/* TABLEAU DU JEU */
+
+.tableau-jeu {
+    background-color: #EFFBDD;
+    color: #1D3D23;
+    padding: 90px 50px;
+}
+
+.titre-tableau-jeu {
+    margin-bottom: 60px;
+   
+    /* margin-left: ; */
+}
+
+.cartes-jeu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* .carte{
+    margin: 0 10px;
+} */
+
+.bouton-jeu {
+    text-align: center;
+    margin: 77px 0 0;
+}
+
+.btn-piger-chasse {
+    width: 404px;
+    height: 66px;
+    background: #1D3D23;
+    border-radius: 100px;
+    color: #FFDB71;
+}
+
+.btn-piger-chasse:hover {
+    background: #FFDB71;
+    color: #1D3D23;
+    cursor: pointer;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* PAGE FICHE SPORTS ET SPECTACLES */
+
+
+
+/* notes bibliographiques */
+
+.notes-biblios {
+    background-color: #1D3D23;
+    color: #EFFBDD;
+    border: #1D3D23 1px solid;
+    padding: 90px 50px;
+}
+
+/* catégorie */
+
+.categorie {
+    position: absolute;
+    top: 880px;
+    left: 40%;
+    width: fit-content;
+    background-color: #FFDB71;
+    padding: 0 20px;
+    color: #1D3D23;
+}
+
+/* section localisation et epigraphe */
+
+.infos-localisation-epigraphe {
+    background-color: #EFFBDD;
+    border: #1D3D23 1px solid;
+    color: #1D3D23;
+    padding: 50px 50px;
+}
+
+/* section capsule sonore */
+
+.section-capsule-sonore {
+    background-color: #1D3D23;
+    border: #1D3D23 1px solid;
+    color: #fff;
+    padding: 50px 50px;
+}
+
+/* section soumettre la fiche */
+
+.soumission-fiche {
+    background-color: #EFFBDD;
+    border: #1D3D23 1px solid;
+    color: #1D3D23;
+    padding: 90px 50px;
+}
+
+.p-association{
+    margin-bottom: 60px;
+}
+
+.message-erreur{
+    padding: 100px 0 50px;
+}
+
+.bouton-redirection {
+    margin: 10px 0;
+    width: max-content;
+    height: 36px;
+    background-color: #A4BE7B;
+    border-style: none;
+    border-radius: 5px;
+    color: #000000;
+    text-align: left;
+    padding: 0 20px ;
+}
+.redirection-lien{
+    text-decoration: none;
+    color: #000000;
+}
+.redirection-lien:hover {
+    cursor: pointer;
+}
+
+span {
+    font-weight: bold;
+    color: #1D3D23;
+    font-size: 1.8rem;
 }
