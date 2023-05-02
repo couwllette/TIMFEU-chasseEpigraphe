@@ -11,34 +11,52 @@
 
 <body>
 
-  <nav>
-    <div class="cols_6_de_12 divLogo">
-      <img class="logo" src="../assests/images/logo-chasse.png">
-    </div>
-    <div class="cols_6_de_12 divNavPrincipale">
-      <ul>
-        <li><a href="">ACCUEIL</a></li>
-        <li class="lien--actif"><a href="">CHASSE AUX <br> ÉPIGRAPHES</a></li>
-        <li><a href="">GALERIE DES <br>PERSONNAGES</a></li>
-        <li><a href="">CARTE</a></li>
+  <!-- ENTETE - MENU PRINCIPAL -->
+  <nav class="entete-nav">
+
+    <div class="div-conteneur-nav conteneur">
+      <a href="../accueil/index.html"><img class="logo" src="../assests/images/logo-chasse1.svg"></a>
+
+      <ul class="entete-nav-liste cols_6_de_12 ">
+        <li class="entete-nav-item"><a href="../accueil/index.html" class="entete-nav-lien">ACCUEIL</a></li>
+        <li class="entete-nav-item lien--actif"><a href="../chasse/index.html" class="entete-nav-lien">CHASSE AUX <br>
+            ÉPIGRAPHES</a></li>
+        <li class="entete-nav-item"><a href="../galerie/index.html" class="entete-nav-lien">GALERIE DES
+            <br>PERSONNAGES</a></li>
+        <li class="entete-nav-item"><a href="../fiches/sports-et-spectacles.html" class="entete-nav-lien">CARTE</a></li>
       </ul>
     </div>
+
   </nav>
 
+  <!-- main -->
   <main>
-    <h1>LA CHASSE AUX ÉPIGRAPHES</h1>
-    <div>
-      <p>La chasse est composée de 12 épigraphes qui ont été sélectionnées pour leur intérêt historique ou anecdotique.
-      </p>
-      <p>• Pigez l’une des 64 combinaisons possibles. <br>
-        • Parcourez les fiches de la Galerie de personnages pour retracer chaque indice. Est-il associé à un personnage,
-        à un objet ou à un lieu? <br>
-        • Complétez la chasse et participez au concours.</p>
+
+    <!-- titre page -->
+    <h1 class="titre-page">LA CHASSE AUX ÉPIGRAPHES</h1>
+
+    <!-- conteneur infos sur jeu -->
+    <div class="infos-jeu">
+      <div class="div-conteneur conteneur">
+        <p>La chasse est composée de 12 épigraphes qui ont été sélectionnées pour leur intérêt historique ou
+          anecdotique.
+        </p>
+        <p>• Pigez l’une des 64 combinaisons possibles. <br>
+          • Parcourez les fiches de la Galerie de personnages pour retracer chaque indice. Est-il associé à un
+          personnage,
+          à un objet ou à un lieu? <br>
+          • Complétez la chasse et participez au concours.</p>
+      </div>
     </div>
-    <div>
-      <h2>Tableau du jeu</h2>
-      <div class="cartes">
-        <svg width="310" height="430" viewBox="0 0 310 430" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+    <!-- tableau du jeu -->
+    <div class="tableau-jeu">
+
+      <h2 class="titre-tableau-jeu conteneur div-conteneur">Tableau du jeu</h2>
+
+      <div class="cartes-jeu conteneur div-conteneur">
+        <svg class="carte" width="310" height="430" viewBox="0 0 310 430" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
           <rect width="310" height="430" rx="20" fill="#FFDB71" />
           <path
             d="M155 195C145.375 195 137.135 191.573 130.281 184.719C123.427 177.865 120 169.625 120 160C120 150.375 123.427 142.135 130.281 135.281C137.135 128.427 145.375 125 155 125C164.625 125 172.865 128.427 179.719 135.281C186.573 142.135 190 150.375 190 160C190 169.625 186.573 177.865 179.719 184.719C172.865 191.573 164.625 195 155 195ZM85 265V240.5C85 235.542 86.2775 230.983 88.8325 226.824C91.3875 222.665 94.7767 219.494 99 217.312C108.042 212.792 117.229 209.4 126.562 207.136C135.896 204.873 145.375 203.744 155 203.75C164.625 203.75 174.104 204.882 183.438 207.145C192.771 209.408 201.958 212.798 211 217.312C215.229 219.5 218.621 222.673 221.176 226.832C223.731 230.992 225.006 235.548 225 240.5V265H85Z"
@@ -50,7 +68,8 @@
             d="M22 386.139V46.0804C56.7634 46.0804 56.7634 46.0804 56.7634 19H255.656C255.656 46.0804 255.656 46.0804 287 46.0804V386.139C249.387 386.139 255.656 386.139 255.656 411H46.5054C46.5054 386.139 46.5054 386.139 22 386.139Z"
             stroke="#1D3D23" stroke-width="4" />
         </svg>
-        <svg width="310" height="430" viewBox="0 0 310 430" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="carte" width="310" height="430" viewBox="0 0 310 430" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
           <rect width="310" height="430" rx="20" fill="#FFDB71" />
           <path
             d="M104.051 139.199L53.693 120.315L104.477 102.294L154.676 120.66L104.051 139.199ZM107.332 183.047C118.094 179.637 128.984 180.06 139.05 183.519L158.515 145.872V126.273L107.332 145.015V183.047ZM195.633 102.875L195.724 254.291L260 227.089L195.633 102.875V102.875ZM145.122 186.124C158.1 193.32 167.817 203.818 169.286 219.597C168.27 231.586 163.326 242.617 155.101 251.043C146.298 260.061 134.411 265.234 122.49 265.234C110.482 265.234 98.5317 260.846 89.7035 253.196C80.6206 245.325 75.586 234.775 75.4982 223.46C75.9042 207.357 83.1382 194.247 100.742 185.678V144.996L50 125.968V193.236L77.5445 205.816C72.2124 214.101 69.1174 223.962 69.1174 234.547C69.1174 263.906 92.9175 287.706 122.277 287.706C147.121 287.706 167.982 270.662 173.811 247.63L188.255 254.292L188.164 102.876L145.122 186.125V186.124Z"
@@ -62,7 +81,8 @@
             d="M22 386.139V46.0804C56.7634 46.0804 56.7634 46.0804 56.7634 19H255.656C255.656 46.0804 255.656 46.0804 287 46.0804V386.139C249.387 386.139 255.656 386.139 255.656 411H46.5054C46.5054 386.139 46.5054 386.139 22 386.139Z"
             stroke="#1D3D23" stroke-width="4" />
         </svg>
-        <svg width="310" height="430" viewBox="0 0 310 430" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="carte" width="310" height="430" viewBox="0 0 310 430" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
           <rect width="310" height="430" rx="20" fill="#FFDB71" />
           <path
             d="M155 107.5C121.138 107.5 93.75 134.888 93.75 168.75C93.75 214.688 155 282.5 155 282.5C155 282.5 216.25 214.688 216.25 168.75C216.25 134.888 188.862 107.5 155 107.5ZM155 190.625C149.198 190.625 143.634 188.32 139.532 184.218C135.43 180.116 133.125 174.552 133.125 168.75C133.125 162.948 135.43 157.384 139.532 153.282C143.634 149.18 149.198 146.875 155 146.875C160.802 146.875 166.366 149.18 170.468 153.282C174.57 157.384 176.875 162.948 176.875 168.75C176.875 174.552 174.57 180.116 170.468 184.218C166.366 188.32 160.802 190.625 155 190.625Z"
@@ -75,32 +95,59 @@
             stroke="#1D3D23" stroke-width="4" />
         </svg>
       </div>
+
+      <p class="bouton-jeu"><button class="btn-piger-chasse" type="button">PIGER UNE CHASSE</button></p>
+
     </div>
+
   </main>
+
+  <!-- pied de page -->
   <footer>
+    <div class="conteneur div-conteneur">
     <div>
-      <ul>
-        <li><a href="">Accueil</a></li>
-        <li class=""><a href="">Chasse aux épigraphes</a></li>
-        <li><a href="">Galerie des personnages</a></li>
-        <li><a href="">Carte</a></li>
+      <ul class="footer-nav">
+        <li class="footer-nav-item"><a href="../accueil/index.html" class="footer-nav-lien">Accueil</a></li>
+        <li class="footer-nav-item"><a href="../chasse/index.html" class="footer-nav-lien">Chasse aux épigraphes</a>
+        </li>
+        <li class="footer-nav-item"><a href="../galerie/index.html" class="footer-nav-lien">Galerie des personnages</a>
+        </li>
+        <li class="footer-nav-item"><a href="" class="footer-nav-lien">Carte</a></li>
       </ul>
     </div>
+
     <div>
-      <ul>
-        <li><a href="">facebook</a></li>
-        <li class=""><a href="">instagram</a></li>
-        <li><a href="">twitter</a></li>
-        <li><a href="">youtube</a></li>
+      <ul class="menu-sociaux">
+        <li class="menu-sociaux__item">
+          <a class="menu-sociaux__lien" href="https://www.facebook.com"
+            style="background-image: url(../assests/images/f_logo_RGB-White_100.png);">facebook</a>
+        </li>
+        <li class="menu-sociaux__item">
+          <a class="menu-sociaux__lien" href="https://instagram.com/"
+            style="background-image: url(../assests/images/Instagram_Glyph_White.png);">instagram</a>
+        </li>
+        <li class="menu-sociaux__item">
+          <a class="menu-sociaux__lien" href="https://twitter.com"
+            style="background-image: url(../assests/images/2021\ Twitter\ logo\ -\ white.png);">twitter</a>
+        </li>
+        <li class="menu-sociaux__item">
+          <a class="menu-sociaux__lien" href="https://youtube.com/"
+            style="background-image: url(../assests/images/yt_logo_mono_dark.png); width: 200px;">youtube</a>
+        </li>
       </ul>
     </div>
-    <p>Une autre création de Énigma, 250 boul. Charest ouest, Québec, Québec. 418-654-9823</p>
-    <p>Merci à l’équipe des données ouvertes de la Ville de Québec qui a rendu disponibles le jeu de données «
+
+    <p class="p-footer">Une autre création de Énigma, 250 boul. Charest ouest, Québec, Québec. 418-654-9823</p>
+    <p class="p-footer">Merci à l’équipe des données ouvertes de la Ville de Québec qui a rendu disponibles le jeu de
+      données «
       Épigraphes historiques » sous licence CC BY. Ces données ont été adaptées pour mieux répondre aux besoins
       pédagogiques et servir de prétexte à la « Chasse aux épigraphes ».</p>
-    <p>Une réalisation de Cloé Ouellette, Kim Dion et Perle Costedoat © Tous droits réservés 2023. Travail scolaire
+    <p class="p-footer">Une réalisation de Cloé Ouellette, Kim Dion et Perle Costedoat © Tous droits réservés 2023.
+      Travail scolaire
       réalisé dans le cadre du programme Techniques d’intégration multimédia. Cégep de Sainte-Foy</p>
+  </div>
   </footer>
+
 </body>
 
 </html>
