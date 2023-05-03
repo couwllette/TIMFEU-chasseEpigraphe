@@ -1,0 +1,188 @@
+@charset "UTF-8";
+/**
+ * @author: Perle Costedoat
+ */
+
+/* IMPORTER D'ABORD LES POLICES DE CARACTÈRES */
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta&family=Tiro+Tamil&display=swap');
+
+/* IMPORTER LES FICHIERS CSS */
+@import url(normalize.css);
+@import url(utilitaires.css);
+@import url(base.css);
+@import url(typo.css);
+@import url(grille.css);
+/* Réinitialisation */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.div-conteneur-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.div-conteneur{
+    margin: 0 auto;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* NAVIGATION (NAV) */
+
+.entete-nav {
+    background-color: #EFFBDD;
+    border: #1D3D23 1px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 25px 50px;
+
+
+}
+
+.entete-nav-liste {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.entete-nav-item {
+    font-size: 1.2rem;
+    list-style: none;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.lien--actif {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.entete-nav-lien {
+    text-decoration: none;
+    color: #1D3D23;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* MAIN */
+body{
+    background-color: #EFFBDD;
+    text-align:left;
+}
+.main{
+    margin: auto;
+    padding: 10% 0 10%;
+}
+h2{
+    font-family:'Lexend Zetta', sans-serif;
+    font-size: 2em;
+}
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* BOUTON */
+button{
+    margin-left: auto;
+    background-color:#FFDB71 ;
+    display: inline-block;
+    border-radius: 30px;
+    text-align: center;
+    padding: 15px;
+    width: 600px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+@media (min-width: 500px){
+    button{
+        margin-left: 150px;
+        background-color:#FFDB71 ;
+        display: inline-block;
+        border-radius: 30px;
+        text-align: center;
+        padding: 15px;
+        width: 600px;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        cursor: pointer;
+    
+    }
+}
+@media (min-width: 800px){
+    button{
+        margin-left: 300px;
+        background-color:#FFDB71 ;
+        display: inline-block;
+        border-radius: 30px;
+        text-align: center;
+        padding: 15px;
+        width: 600px;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        cursor: pointer;
+    
+    }
+}
+button:hover {
+    background-color: #1D3D23;
+    color: #EFFBDD;
+
+}
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* FOOTER */
+
+.menu-sociaux__lien {
+    background-repeat: no-repeat;
+    padding-right: 100px;
+    background-size: contain;
+    font-size: 0;
+    height: 50px;
+    display: block;
+}
+
+.menu-sociaux {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    padding: 53px 0;
+}
+
+footer {
+    background-color: #1D3D23;
+    color: #fff;
+    padding: 10px 50px 30px;
+    
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-evenly;
+    padding: 25px 0 10px;
+}
+
+.footer-nav-lien {
+    color: #fff;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+.p-footer {
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 5px 0;
+}
