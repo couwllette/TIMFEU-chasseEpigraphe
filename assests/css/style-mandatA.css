@@ -67,13 +67,79 @@
     text-decoration: none;
     color: #1D3D23;
 }
+
+
+
 /* ------------------------------------------------------------------------------------------------------------------ */
-/*VIDEO*/
-.video{
-    max-width: 1440px;
+/* MAIN */
+body{
+    background-color: #EFFBDD;
+    text-align:left;
 }
+.main{
+    margin: auto;
+    padding: 10% 0 10%;
+}
+h2{
+    font-family:'Lexend Zetta', sans-serif;
+    font-size: 2em;
+}
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* BOUTON */
+button{
+    margin-left: auto;
+    background-color:#FFDB71 ;
+    display: inline-block;
+    border-radius: 30px;
+    text-align: center;
+    padding: 15px;
+    width: 600px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
 
+}
+@media (min-width: 500px){
+    button{
+        margin-left: 150px;
+        background-color:#FFDB71 ;
+        display: inline-block;
+        border-radius: 30px;
+        text-align: center;
+        padding: 15px;
+        width: 600px;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        cursor: pointer;
+    
+    }
+}
+@media (min-width: 800px){
+    button{
+        margin-left: 300px;
+        background-color:#FFDB71 ;
+        display: inline-block;
+        border-radius: 30px;
+        text-align: center;
+        padding: 15px;
+        width: 600px;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        cursor: pointer;
+    
+    }
+}
+button:hover {
+    background-color: #1D3D23;
+    color: #EFFBDD;
 
+}
 /* ------------------------------------------------------------------------------------------------------------------ */
 /* FOOTER */
 
