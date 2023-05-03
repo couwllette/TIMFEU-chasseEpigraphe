@@ -22,13 +22,13 @@
     box-sizing: border-box;
 }
 
-.div-conteneur-nav{
+.div-conteneur-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.div-conteneur{
+.div-conteneur {
     margin: 0 auto;
 }
 
@@ -77,28 +77,77 @@
 /* TITRE PAGE */
 
 
-.titre-page, .titre-fiche {
+.titre-page,
+.titre-fiche {
     background-color: #EFFBDD;
     border: #1D3D23 1px solid;
     margin: 0;
     padding: 100px 0;
     text-align: center;
     color: #1D3D23;
+    position: relative;
 }
 
-.p-copyright-img-titre{
+.span-prenom {
+
+    position: absolute;
+    width: 302px;
+    height: 92px;
+    left: 24%;
+    top: 30%;
+
+    font-family: 'Tiro Tamil';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 92px;
+
+}
+
+.span-nom {
+    position: absolute;
+    width: 254px;
+    height: 92px;
+    left: 61%;
+    top: 55%;
+
+
+    font-family: 'Tiro Tamil';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 92px;
+}
+
+.p-copyright-img-titre {
     text-align: end;
+    margin-bottom: 30px;
 }
 
-.image-copyright{
+.image-copyright {
     display: flex;
     flex-direction: row;
     align-items: end;
 }
 
-.img-titre-fiche{
+.img-titre-fiche {
     order: 1;
+    margin-left: 25px;
+
 }
+
+
+
+/* position: absolute;
+width: 490px;
+height: 490px;
+left: 475px;
+top: 318px;
+
+background: url(e0001_edmund_alleyn.jpg); */
+
+
+
 
 /* ------------------------------------------------------------------------------------------------------------------ */
 /* FOOTER */
@@ -124,7 +173,7 @@ footer {
     background-color: #1D3D23;
     color: #fff;
     padding: 10px 50px 30px;
-    
+
 }
 
 .footer-nav {
@@ -172,7 +221,7 @@ footer {
 
 .titre-tableau-jeu {
     margin-bottom: 60px;
-   
+
     /* margin-left: ; */
 }
 
@@ -237,8 +286,69 @@ footer {
     background-color: #EFFBDD;
     border: #1D3D23 1px solid;
     color: #1D3D23;
-    padding: 50px 50px;
+    padding: 90px 50px;
 }
+
+.section-localisation {
+    position: relative;
+    display: flex;
+    padding: 19px 0;
+}
+.section-epigraphe {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 19px 0;
+}
+
+.sous-titre-localisation {
+    position: absolute;
+    top: 30%;
+    left: 37%;
+    width: 486px;
+    height: 92px;
+
+    font-family: 'Tiro Tamil';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 92px;
+}
+
+.sous-titre-epigraphe{
+    position: absolute;
+    top: 35%;
+    left: 0;
+    width: 486px;
+    height: 92px;
+
+    font-family: 'Tiro Tamil';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 92px;
+}
+
+.p-localisation {
+    margin-left: 25px;
+    margin-bottom: 50px;
+    align-self: flex-end;
+}
+
+.p-epigraphe{
+    margin-bottom: 50px;
+    align-self: flex-end;
+}
+
+.img-localisation {
+    width: 40.5%;
+}
+
+.img-epigraphe{
+    order: 1;
+    margin-right: 80px;
+}
+
 
 /* section capsule sonore */
 
@@ -246,7 +356,12 @@ footer {
     background-color: #1D3D23;
     border: #1D3D23 1px solid;
     color: #fff;
-    padding: 50px 50px;
+    padding: 90px 50px;
+}
+
+.sous-titre-capsule{
+    color: #EFFBDD;
+    text-align: center;
 }
 
 /* section soumettre la fiche */
@@ -258,11 +373,11 @@ footer {
     padding: 90px 50px;
 }
 
-.p-association{
+.p-association {
     margin-bottom: 60px;
 }
 
-.message-erreur{
+.message-erreur {
     padding: 100px 0 50px;
 }
 
@@ -275,12 +390,14 @@ footer {
     border-radius: 5px;
     color: #000000;
     text-align: left;
-    padding: 0 20px ;
+    padding: 0 20px;
 }
-.redirection-lien{
+
+.redirection-lien {
     text-decoration: none;
     color: #000000;
 }
+
 .redirection-lien:hover {
     cursor: pointer;
 }
