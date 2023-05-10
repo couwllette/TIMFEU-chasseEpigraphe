@@ -176,11 +176,7 @@ footer {
     /* margin-left: ; */
 }
 
-.cartes-jeu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+
 
 /* .carte{
     margin: 0 10px;
@@ -289,4 +285,21 @@ span {
     font-weight: bold;
     color: #1D3D23;
     font-size: 1.8rem;
+}
+
+
+.carte_personnage {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.carte_personnage p {
+    padding-top: 25px;
+}
+
+.liste_1 li{
+    list-style-type: square;
+
 }
