@@ -102,21 +102,35 @@
 
 /* ------------------------------------------------------------------------------------------------------------------ */
 /* FOOTER */
-
+.youtube{
+    width: 120px;
+}
+@media (min-width:600px){
+    .youtube{
+        width: 200px;
+    }
+}
 .menu-sociaux__lien {
     background-repeat: no-repeat;
-    padding-right: 100px;
-    background-size: contain;
+    background-size:contain;
     font-size: 0;
-    height: 50px;
+    height: 30px;
     display: block;
+    padding: 0 25px;
+    text-align: center;
+    background-position: center;
+}
+.menu-sociaux__item{
+    width: 200px;
+    display: flex;
+    justify-content: center;
 }
 
 .menu-sociaux {
     display: flex;
     flex-direction: row;
     list-style: none;
-    justify-content: center;
+    justify-content: space-around;
     padding: 53px 0;
 }
 
@@ -124,6 +138,7 @@ footer {
     background-color: #1D3D23;
     color: #fff;
     padding: 10px 50px 30px;
+    text-align: center;
     
 }
 
@@ -134,11 +149,18 @@ footer {
     justify-content: space-evenly;
     padding: 25px 0 10px;
 }
-
+.footer-nav-item{
+    text-align: center;
+    display: flex;
+    
+}
 .footer-nav-lien {
     color: #fff;
-    font-size: 1.4rem;
+    font-size: 1rem;
     text-decoration: none;
+    margin: 0 10px;
+    width: fit-content;
+    text-align: center;
 }
 
 .p-footer {
@@ -147,6 +169,52 @@ footer {
     padding: 5px 0;
 }
 
+@media (min-width:600px){
+    .menu-sociaux__lien {
+        background-repeat: no-repeat;
+        padding-right: 100px;
+        background-size: contain;
+        font-size: 0;
+        height: 50px;
+        display: block;
+    }
+    
+    .menu-sociaux {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: center;
+        padding: 53px 0;
+    }
+    
+    footer {
+        background-color: #1D3D23;
+        color: #fff;
+        padding: 10px 50px 30px;
+        
+    }
+    
+    .footer-nav {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: space-evenly;
+        padding: 25px 0 10px;
+    }
+    
+    .footer-nav-lien {
+        color: #fff;
+        font-size: 1.4rem;
+        text-decoration: none;
+    }
+    
+    .p-footer {
+        text-align: center;
+        font-size: 1.1rem;
+        padding: 5px 0;
+    }
+
+}
 
 
 /* ------------------------------------------------------------------------------------------------------------------ */
@@ -299,7 +367,104 @@ span {
     padding-top: 25px;
 }
 
-.liste_1 li{
-    list-style-type: square;
+
+/* filtre */
+
+.filtre {
+    justify-content: center;
+    margin:20px 50px;
+    background-color: white;
+    padding: 20px 30px;
 
 }
+
+@media (min-width:800px){
+    .filtre {
+        justify-content: center;
+        margin:50px 100px;
+        background-color: white;
+        padding: 20px 150px;
+    
+    }
+    }
+
+@media (min-width:600px){
+.filtre {
+    justify-content: center;
+    margin:50px 100px;
+    background-color: white;
+    padding: 20px 150px;
+
+}
+}
+
+
+.liste_1 li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+@media (min-width:800px){
+    .liste_1 li {
+        list-style: none;
+        padding: 10px 15px;
+    }
+    }
+
+@media (min-width:600px){
+.liste_1 li {
+    list-style: none;
+    padding: 10px 15px;
+}
+}
+
+
+.liste_2 li {
+    list-style: none;
+    padding: 10px 15px;
+}
+
+@media (min-width:800px){
+    .liste_2 li {
+        list-style: none;
+        display: inline-block;
+        padding: 10px 15px;
+    }
+    }
+
+@media (min-width:600px){
+.liste_2 li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 15px;
+}
+}
+
+
+
+body {
+    background-color: #EFFBDD;
+}
+
+
+
+
+
+
+
+
+/* bouton */
+
+input[type="checkbox"].bouton {
+    display: none;
+  }
+  input[type="checkbox"].bouton + label::before {
+    content:'';
+    border: 1px solid #FFDB71;
+    padding: 0px 10px;
+    margin-right:  10px;
+  }
+  input[type="checkbox"].bouton:checked + label::before {
+    background-color: #FFDB71;
+  }
