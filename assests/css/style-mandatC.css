@@ -246,12 +246,18 @@ footer {
     background: #1D3D23;
     border-radius: 100px;
     color: #FFDB71;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
 }
 
 .btn-piger-chasse:hover {
     background: #FFDB71;
     color: #1D3D23;
     cursor: pointer;
+
 }
 
 /* ------------------------------------------------------------------------------------------------------------------ */
