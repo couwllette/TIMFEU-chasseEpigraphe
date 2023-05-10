@@ -42,7 +42,7 @@
     flex-direction: row;
     justify-content: center;
     padding: 25px 50px;
-
+    height: 200px;
 
 }
 
@@ -70,6 +70,9 @@
     color: #1D3D23;
 }
 
+.logo{
+    width: 100%;
+}
 
 
 
@@ -86,6 +89,10 @@
     text-align: center;
     color: #1D3D23;
     position: relative;
+}
+
+.titre-fiche{
+    height: 700px;
 }
 
 .span-prenom {
@@ -265,14 +272,17 @@ footer {
     background-color: #1D3D23;
     color: #EFFBDD;
     border: #1D3D23 1px solid;
+    display: flex;
+    align-items: center;
     padding: 90px 50px;
+    height: 500px;
 }
 
 /* catégorie */
 
 .categorie {
     position: absolute;
-    top: 880px;
+    top: 1390px;
     left: 40%;
     width: fit-content;
     background-color: #FFDB71;
@@ -317,6 +327,7 @@ footer {
 
 .sous-titre-epigraphe{
     position: absolute;
+    margin-bottom: 10px;
     top: 35%;
     left: 0;
     width: 486px;
@@ -362,6 +373,13 @@ footer {
 .sous-titre-capsule{
     color: #EFFBDD;
     text-align: center;
+}
+
+.p-transcription{
+    overflow: scroll;
+    width: fit-content;
+    height: 100px;
+    background-color: #5b5b5b;
 }
 
 /* section soumettre la fiche */
