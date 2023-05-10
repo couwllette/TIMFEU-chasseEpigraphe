@@ -64,3 +64,32 @@
         flex-basis: 100%;
     } 
 }
+
+
+/* grille des carte de personnages */
+.cartes-jeu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+@media (min-width: 600px) {
+.cartes-jeu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+}
+
+.carte_personnage img{
+    height: "211";
+    width: "154";
+}
+
+
+@media (min-width: 600px) {
+.carte_personnage img{
+    height: "440";
+    width: "320";
+}
+}
