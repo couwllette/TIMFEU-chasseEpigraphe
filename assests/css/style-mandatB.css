@@ -13,6 +13,10 @@
 @import url(base.css);
 @import url(typo.css);
 @import url(grille.css);
+@import url(menu.css);
+@import url(style-mandatC.css);
+
+
 
 
 /* Réinitialisation */
@@ -32,52 +36,23 @@
     margin: 0 auto;
 }
 
-/* ------------------------------------------------------------------------------------------------------------------ */
-/* NAVIGATION (NAV) */
 
-.entete-nav {
-    background-color: #EFFBDD;
-    border: #1D3D23 1px solid;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 25px 50px;
-
-
+.logo{
+    width: 300px;
+    transition: ease-in-out 0.3s;
 }
-
-.entete-nav-liste {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+@media(min-width:1200px){
+    .logo{
+        width: 400px;
+    } 
 }
-
-.entete-nav-item {
-    font-size: 1.2rem;
-    list-style: none;
-    text-align: center;
-    margin: 0 10px;
-}
-
-.lien--actif {
-    font-size: 1.6rem;
-    font-weight: bold;
-}
-
-.entete-nav-lien {
-    text-decoration: none;
-    color: #1D3D23;
-}
-
-
 
 
 /* ------------------------------------------------------------------------------------------------------------------ */
 /* TITRE PAGE */
 
 
-.titre-page, .titre-fiche {
+/* .titre-page, .titre-fiche {
     background-color: #EFFBDD;
     border: #1D3D23 1px solid;
     margin: 0;
@@ -98,7 +73,7 @@
 
 .img-titre-fiche{
     order: 1;
-}
+} */ 
 
 /* ------------------------------------------------------------------------------------------------------------------ */
 /* FOOTER */
@@ -224,18 +199,17 @@ span {
 }
 
 
-.carte_personnage  {
+.personnages {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 30px;
+
+
 }
 
 
-.carte_personnage p {
-    padding-top: 25px;
+.carte_personnage p {   
     color: #1D3D23;
-    text-align: center;
 }
 
 
