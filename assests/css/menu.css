@@ -1,0 +1,194 @@
+/**
+ * @author Prénom Nom courriel
+**/
+
+/**
+ * TABLE DES MATIÈRES
+ * Palette de couleurs
+ * Base commune
+ * - Bouton du menu
+ * - Liste du menu
+ * - Liens du menu
+ * Styles conditionnels au JavaScript
+ */
+
+/****** Base commune *******/
+
+/* Bouton du menu */
+.nav__control {
+    background-color: #1D3D23;
+    border: none;
+    padding: 10px;
+    min-width: 40px;
+}
+@media (min-width: 600px) {
+    .nav__control {
+        display: none;
+    }
+}
+.nav__control:hover,
+.nav__control:active {
+    background-color: #FFDB71;
+}
+.nav__span{
+    color: #FFDB71;
+    font-size: 1.5rem;
+}
+.nav__span:hover{
+    color: #1D3D23;
+}
+
+.nav__control:focus {
+    /* En mettant la règle outline: none;, les styles du navigateur
+     * pour les éléments en cours de focus sont effacés. Il faut alors
+     * les remplacer par d'autres styles qui peuvent être plus
+     * en accord avec la direction visuelle du projet.
+     */
+    outline: none;
+    /* AUTRES STYLES EN REMPLACEMENT DU OUTLINE */
+    /*
+     * Les règles outline-offset et outline permettent
+     * de modifier l'apparence du outline par défaut des navigateurs.
+     */
+    outline-offset: -5px;
+    /* outline: darkmagenta auto 5px; */
+}
+
+.entete-nav {
+    background-color: #EFFBDD;
+    border: #1D3D23 1px solid;
+    padding: 25px 50px;
+    height: fit-content;
+
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+@media (min-width:600px){
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+}
+
+.entete-nav-liste {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+}
+@media (min-width:600px){
+    .entete-nav-liste{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: max-content;
+    }
+    }
+
+.entete-nav-item {
+    font-size: 1.2rem;
+    list-style: none;
+    text-align: center;
+    margin: 0 10px;
+}
+@media (min-width:600px){
+    .entete-nav-item {
+        margin: 0 5px;
+    }
+    }
+
+.lien--actif {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.entete-nav-lien {
+    text-decoration: none;
+    color: #1D3D23;
+    display: block;
+    padding: 5px 10px;
+    width: 100%;
+}
+
+/* Liste du menu */
+.entete-nav-liste {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    max-height: none;
+}
+@media (min-width: 600px) {
+    .entete-nav-item {
+        display: inline-block;
+    }
+}
+
+/* Liens du menu */
+/* .entete-nav-lien {
+    background-color: rgba(145, 0, 145, 0.2);
+    display: block;
+    padding: 5px 10px;
+    width: 100%;
+} */
+
+ /* .entete-nav-lien:link,
+.entete-nav-lien:visited {
+    text-decoration: none;
+    color: inherit;
+} */
+
+.entete-nav-lien:hover {
+    color:#fff;
+    background-color: #1D3D23;
+}
+
+
+.entete-nav-lien:focus {
+    outline-offset: -5px;
+    outline: #1D3D23 auto 5px;
+}
+@media (min-width: 600px) {
+    .entete-nav-lien:focus {
+        outline-offset: 0; 
+    }
+} 
+
+/** Une classe nav__link--active
+    sert à définir un état différent
+    pour l'item de menu actif
+    **/
+.lien--actif {
+    border-left: 5px solid #FFDB71;
+}
+@media (min-width: 600px) {
+    .lien--actif {
+        border-left:none;
+        border-bottom:5px solid #FFDB71;
+    }
+}
+
+
+/** 
+ * Styles conditionnels au JavaScript
+ * L'ajout par JavaScript de la classe .js
+ * permet de rédiger des sélecteurs conditionnels à ce que Javascript est actif
+ * De cette façon,
+ *** en l'absence de JavaScript le menu restera visible et accessible
+ *** en présence de JavaScript le menu est caché
+ */
+@media (max-width: 599px) {
+    .js .entete-nav-liste {
+        max-height: 100vh;
+        overflow: hidden;
+        transition: max-height 2s;
+    }
+    .js .nav--closed .entete-nav-liste {
+        max-height: 0;
+        transition: max-height 0.5s;
+    }
+}
