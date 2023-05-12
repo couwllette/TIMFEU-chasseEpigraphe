@@ -10,6 +10,7 @@
     }
 }
 
+
 /*** Conteneur flex utile autant pour l'écran étroit que l'écran large ***/
 .flxRow{
     display:flex;
