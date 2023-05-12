@@ -217,138 +217,6 @@ footer {
 }
 
 
-/* ------------------------------------------------------------------------------------------------------------------ */
-/* PAGE CHASSE AUX ÉPIGRAPHES */
-
-
-/* INFOS JEUX */
-
-.infos-jeu {
-    background-color: #1D3D23;
-    color: #EFFBDD;
-    border: #1D3D23 1px solid;
-    padding: 90px 50px;
-}
-
-/* TABLEAU DU JEU */
-
-.tableau-jeu {
-    background-color: #EFFBDD;
-    color: #1D3D23;
-    padding: 90px 50px;
-}
-
-.titre-tableau-jeu {
-    margin-bottom: 60px;
-   
-    /* margin-left: ; */
-}
-
-
-
-/* .carte{
-    margin: 0 10px;
-} */
-
-.bouton-jeu {
-    text-align: center;
-    margin: 77px 0 0;
-}
-
-.btn-piger-chasse {
-    width: 404px;
-    height: 66px;
-    background: #1D3D23;
-    border-radius: 100px;
-    color: #FFDB71;
-}
-
-.btn-piger-chasse:hover {
-    background: #FFDB71;
-    color: #1D3D23;
-    cursor: pointer;
-}
-
-/* ------------------------------------------------------------------------------------------------------------------ */
-/* PAGE FICHE SPORTS ET SPECTACLES */
-
-
-
-/* notes bibliographiques */
-
-.notes-biblios {
-    background-color: #1D3D23;
-    color: #EFFBDD;
-    border: #1D3D23 1px solid;
-    padding: 90px 50px;
-}
-
-/* catégorie */
-
-.categorie {
-    position: absolute;
-    top: 880px;
-    left: 40%;
-    width: fit-content;
-    background-color: #FFDB71;
-    padding: 0 20px;
-    color: #1D3D23;
-}
-
-/* section localisation et epigraphe */
-
-.infos-localisation-epigraphe {
-    background-color: #EFFBDD;
-    border: #1D3D23 1px solid;
-    color: #1D3D23;
-    padding: 50px 50px;
-}
-
-/* section capsule sonore */
-
-.section-capsule-sonore {
-    background-color: #1D3D23;
-    border: #1D3D23 1px solid;
-    color: #fff;
-    padding: 50px 50px;
-}
-
-/* section soumettre la fiche */
-
-.soumission-fiche {
-    background-color: #EFFBDD;
-    border: #1D3D23 1px solid;
-    color: #1D3D23;
-    padding: 90px 50px;
-}
-
-.p-association{
-    margin-bottom: 60px;
-}
-
-.message-erreur{
-    padding: 100px 0 50px;
-}
-
-.bouton-redirection {
-    margin: 10px 0;
-    width: max-content;
-    height: 36px;
-    background-color: #A4BE7B;
-    border-style: none;
-    border-radius: 5px;
-    color: #000000;
-    text-align: left;
-    padding: 0 20px ;
-}
-.redirection-lien{
-    text-decoration: none;
-    color: #000000;
-}
-.redirection-lien:hover {
-    cursor: pointer;
-}
-
 span {
     font-weight: bold;
     color: #1D3D23;
@@ -356,16 +224,21 @@ span {
 }
 
 
-.carte_personnage {
+.carte_personnage  {
     display: flex;
     flex-direction: column;
-    text-align: center;
     align-items: center;
+    padding-bottom: 30px;
 }
+
 
 .carte_personnage p {
     padding-top: 25px;
+    color: #1D3D23;
+    text-align: center;
 }
+
+
 
 
 /* filtre */
@@ -448,13 +321,7 @@ body {
 }
 
 
-
-
-
-
-
-
-/* bouton */
+/* bouton filtre */
 
 input[type="checkbox"].bouton {
     display: none;

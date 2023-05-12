@@ -71,10 +71,10 @@
 .cartes-jeu {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px;
+    grid-gap: 10px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 900px) {
 .cartes-jeu {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -83,14 +83,22 @@
 }
 
 .carte_personnage img{
-    height: "211";
-    width: "154";
+
+    width: 154px;
 }
 
+
+@media (min-width: 900px) {
+.carte_personnage img{
+
+    width: 320px;
+}
+}
 
 @media (min-width: 600px) {
-.carte_personnage img{
-    height: "440";
-    width: "320";
-}
-}
+    .carte_personnage img{
+
+        width: 280px;
+
+    }
+    }
