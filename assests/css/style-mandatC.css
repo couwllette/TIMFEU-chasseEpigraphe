@@ -13,7 +13,7 @@
 @import url(base.css);
 @import url(typo.css);
 @import url(grille.css);
-
+@import url(menu.css);
 
 /* Réinitialisation */
 * {
@@ -24,8 +24,17 @@
 
 .div-conteneur-nav {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media(min-width:900px){
+    .div-conteneur-nav{
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
+    }
 }
 
 .div-conteneur {
@@ -35,23 +44,41 @@
 /* ------------------------------------------------------------------------------------------------------------------ */
 /* NAVIGATION (NAV) */
 
-.entete-nav {
+/* .entete-nav {
     background-color: #EFFBDD;
     border: #1D3D23 1px solid;
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 25px 50px;
-    height: 200px;
+    height: fit-content;
 
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width:600px){
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 }
 
 .entete-nav-liste {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
+@media (min-width:600px){
+    .entete-nav-liste{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    }
 
 .entete-nav-item {
     font-size: 1.2rem;
@@ -68,10 +95,16 @@
 .entete-nav-lien {
     text-decoration: none;
     color: #1D3D23;
-}
+} */
 
 .logo{
-    width: 100%;
+    width: 300px;
+    transition: ease-in-out 0.3s;
+}
+@media(min-width:1200px){
+    .logo{
+        width: 400px;
+    }
 }
 
 
@@ -159,20 +192,35 @@ background: url(e0001_edmund_alleyn.jpg); */
 /* ------------------------------------------------------------------------------------------------------------------ */
 /* FOOTER */
 
+.youtube{
+    width: 120px;
+}
+@media (min-width:600px){
+    .youtube{
+        width: 200px;
+    }
+}
 .menu-sociaux__lien {
     background-repeat: no-repeat;
-    padding-right: 100px;
-    background-size: contain;
+    background-size:contain;
     font-size: 0;
-    height: 50px;
+    height: 30px;
     display: block;
+    padding: 0 25px;
+    text-align: center;
+    background-position: center;
+}
+.menu-sociaux__item{
+    width: 200px;
+    display: flex;
+    justify-content: center;
 }
 
 .menu-sociaux {
     display: flex;
     flex-direction: row;
     list-style: none;
-    justify-content: center;
+    justify-content: space-around;
     padding: 53px 0;
 }
 
@@ -180,7 +228,8 @@ footer {
     background-color: #1D3D23;
     color: #fff;
     padding: 10px 50px 30px;
-
+    text-align: center;
+    
 }
 
 .footer-nav {
@@ -190,19 +239,72 @@ footer {
     justify-content: space-evenly;
     padding: 25px 0 10px;
 }
-
+.footer-nav-item{
+    text-align: center;
+    display: flex;
+    
+}
 .footer-nav-lien {
     color: #fff;
-    font-size: 1.4rem;
+    font-size: 1rem;
     text-decoration: none;
+    margin: 0 10px;
+    width: fit-content;
+    text-align: center;
 }
 
 .p-footer {
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding: 5px 0;
 }
 
+@media (min-width:600px){
+    .menu-sociaux__lien {
+        background-repeat: no-repeat;
+        padding-right: 100px;
+        background-size: contain;
+        font-size: 0;
+        height: 50px;
+        display: block;
+    }
+    
+    .menu-sociaux {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: center;
+        padding: 53px 0;
+    }
+    
+    footer {
+        background-color: #1D3D23;
+        color: #fff;
+        padding: 10px 50px 30px;
+        
+    }
+    
+    .footer-nav {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: space-evenly;
+        padding: 25px 0 10px;
+    }
+    
+    .footer-nav-lien {
+        color: #fff;
+        font-size: 1.4rem;
+        text-decoration: none;
+    }
+    
+    .p-footer {
+        text-align: center;
+        font-size: 1.2rem;
+        padding: 5px 0;
+    }
+
+}
 
 
 /* ------------------------------------------------------------------------------------------------------------------ */
@@ -222,25 +324,44 @@ footer {
 
 .tableau-jeu {
     background-color: #EFFBDD;
+    border: #1D3D23 1px solid;
     color: #1D3D23;
     padding: 90px 50px;
 }
 
 .titre-tableau-jeu {
-    margin-bottom: 60px;
-
-    /* margin-left: ; */
+    margin-bottom: 30px;
+}
+@media(max-width:599px){
+    .titre-tableau-jeu {
+        margin-bottom: 60px;
+        text-align: center;
+    }  
 }
 
 .cartes-jeu {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.carte{
+    width: 200px;
+    margin: 10px 0;
+}
+@media (min-width:600px){
+    .cartes-jeu{
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
+    }
+    .carte{
+       width:310px; 
+    height:430px;
+    margin: 0 10px;
+    }
 }
 
-/* .carte{
-    margin: 0 10px;
-} */
 
 .bouton-jeu {
     text-align: center;
@@ -248,16 +369,24 @@ footer {
 }
 
 .btn-piger-chasse {
-    width: 404px;
+    width: max-content;
+    padding: 0 30px;
     height: 66px;
     background: #1D3D23;
     border-radius: 100px;
     color: #FFDB71;
+    font-size: 1.2rem;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
     cursor: pointer;
+}
+@media (min-width:600px){
+    .btn-piger-chasse{
+        width: 400px;
+        font-size: 1.4rem; 
+    }
 }
 
 .btn-piger-chasse:hover {
