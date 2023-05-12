@@ -305,10 +305,6 @@ background: url(e0001_edmund_alleyn.jpg); */
 
 /* ------------------------------------------------------------------------------------------------------------------ */
 /* FOOTER */
-<<<<<<< HEAD
-
-=======
->>>>>>> MandatA
 .youtube{
     width: 120px;
 }
@@ -417,19 +413,11 @@ footer {
     
     .p-footer {
         text-align: center;
-<<<<<<< HEAD
         font-size: 1.2rem;
-=======
-        font-size: 1.1rem;
->>>>>>> MandatA
         padding: 5px 0;
     }
 
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> MandatA
 
 
 /* ------------------------------------------------------------------------------------------------------------------ */
@@ -467,7 +455,6 @@ footer {
 .cartes-jeu {
     display: flex;
     flex-direction: column;
-<<<<<<< HEAD
     justify-content: center;
     align-items: center;
 }
@@ -488,25 +475,6 @@ footer {
     }
 }
 
-=======
-    align-items: center;
-}
-
-@media (min-width:600px){
-    .cartes-jeu {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
-@media (min-width:800px){
-    .cartes-jeu {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
->>>>>>> MandatA
 
 .carte{
     width: 80%;
@@ -522,14 +490,9 @@ footer {
 }
 
 .btn-piger-chasse {
-<<<<<<< HEAD
     width: max-content;
     padding: 0 30px;
     height: 66px;
-=======
-    width: 300px;
-    height: 80px;
->>>>>>> MandatA
     background: #1D3D23;
     border-radius: 100px;
     color: #FFDB71;
@@ -541,42 +504,11 @@ footer {
     cursor: pointer;
 }
 @media (min-width:600px){
-<<<<<<< HEAD
     .btn-piger-chasse{
         width: 400px;
         font-size: 1.4rem; 
     }
 }
-=======
-    .btn-piger-chasse {
-        width: 404px;
-        height: 66px;
-        background: #1D3D23;
-        border-radius: 100px;
-        color: #FFDB71;
-        -webkit-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        transition: all 0.5s;
-        cursor: pointer;
-    }
-}
-@media (min-width:800px){
-    .btn-piger-chasse {
-        width: 404px;
-        height: 66px;
-        background: #1D3D23;
-        border-radius: 100px;
-        color: #FFDB71;
-        -webkit-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        transition: all 0.5s;
-        cursor: pointer;
-    }
-}
-
->>>>>>> MandatA
 
 .btn-piger-chasse:hover {
     background: #FFDB71;
