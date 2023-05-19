@@ -30,6 +30,7 @@
 .nav__control:hover,
 .nav__control:active {
     background-color: #FFDB71;
+    cursor: pointer;
 }
 .nav__span{
     color: #FFDB71;

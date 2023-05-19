@@ -41,6 +41,8 @@
     margin: 0 auto;
 }
 
+
+
 /* ------------------------------------------------------------------------------------------------------------------ */
 /* NAVIGATION (NAV) */
 
@@ -860,7 +862,7 @@ audio{
 
 .p-transcription{
     overflow: scroll;
-    width: fit-content;
+    width: 500px;
     height: 100px;
     background-color: #5b5b5b;
 }
@@ -963,3 +965,4 @@ span {
     color: #1D3D23;
     font-size: 1.4rem;
 }
+
