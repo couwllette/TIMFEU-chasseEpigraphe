@@ -41,10 +41,12 @@
     margin: 0 auto;
 }
 
+
+
 /* ------------------------------------------------------------------------------------------------------------------ */
 /* NAVIGATION (NAV) */
 
-/* .entete-nav {
+.entete-nav {
     background-color: #EFFBDD;
     border: #1D3D23 1px solid;
     display: flex;
@@ -95,7 +97,7 @@
 .entete-nav-lien {
     text-decoration: none;
     color: #1D3D23;
-} */
+}
 
 .logo{
     width: 300px;
@@ -861,7 +863,7 @@ audio{
 
 .p-transcription{
     overflow: scroll;
-    width: fit-content;
+    width: 500px;
     height: 100px;
     background-color: #5b5b5b;
 }
@@ -964,3 +966,4 @@ span {
     color: #1D3D23;
     font-size: 1.4rem;
 }
+
