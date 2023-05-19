@@ -13,6 +13,7 @@
 @import url(base.css);
 @import url(typo.css);
 @import url(grille.css);
+@import url(menu.css);
 /* Réinitialisation */
 * {
     margin: 0;
