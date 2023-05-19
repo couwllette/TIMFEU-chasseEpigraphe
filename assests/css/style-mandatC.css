@@ -22,7 +22,7 @@
     box-sizing: border-box;
 }
 
-/* .div-conteneur-nav {
+.div-conteneur-nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -39,7 +39,7 @@
 
 .div-conteneur {
     margin: 0 auto;
-} */
+}
 
 
 
@@ -272,30 +272,26 @@
     justify-content: center;
     align-items: center;
 }
-.carte{
-    width: 200px;
-    margin: 10px 0;
-}
+
 @media (min-width:600px){
     .cartes-jeu{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     }
-    .carte{
-       width:310px; 
-    height:430px;
-    margin: 0 10px;
-    }
+    
 }
 
 
 .carte{
-    width: 80%;
+    width: 60%;
+    margin-bottom: 10px;
 }
 @media (min-width:600px){
     .carte{
-        width: 30%;
+      
+        width: 20%;
+    margin: 0 10px;
     }
 }
 .bouton-jeu {
@@ -725,6 +721,37 @@ audio{
 
 .message-erreur {
     padding: 100px 0 50px;
+}
+
+fieldset{
+    border: none;
+
+} 
+form ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[name="formSoumission"]+label {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+input[name="formSoumission"]+label img {
+    width: 100%;
+    
+    
+}
+
+input[name="formSoumission"]:checked+label{
+    border: 5px red solid;
+    padding: 0;
+    margin: 0;
 }
 
 /*bouton redirecton*/
