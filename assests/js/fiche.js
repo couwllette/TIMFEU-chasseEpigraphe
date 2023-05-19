@@ -48,11 +48,11 @@ const objFicheArtsVisuels = {
 
 
         const refBaliseAudio = document.querySelector('audio');
-
+        
 
         refPrenom.innerHTML = objJSONepigraphes[intIdFicheCourante].PRENOM;
         refNom.innerHTML = objJSONepigraphes[intIdFicheCourante].NOM;
-        refUrlImage.src = '../assests/images/fiches/'+ objJSONepigraphes[intIdFicheCourante].SUFFIXE_IMAGES + '_w154.jpg';
+        refUrlImage.src = '../assests/images/image_titre/' + intIdFicheCourante + '.jpg';
         refTitreImage.innerHTML = objJSONepigraphes[intIdFicheCourante].IMAGE.TITRE;
         refCreditImage.innerHTML = objJSONepigraphes[intIdFicheCourante].IMAGE.CREDIT;
         refNotesBiographiques.innerHTML = objJSONepigraphes[intIdFicheCourante].BIOGRAPHIE;
