@@ -46,7 +46,7 @@
 /* ------------------------------------------------------------------------------------------------------------------ */
 /* NAVIGATION (NAV) */
 
-/* .entete-nav {
+.entete-nav {
     background-color: #EFFBDD;
     border: #1D3D23 1px solid;
     display: flex;
@@ -97,7 +97,7 @@
 .entete-nav-lien {
     text-decoration: none;
     color: #1D3D23;
-} */
+}
 
 .logo{
     width: 300px;

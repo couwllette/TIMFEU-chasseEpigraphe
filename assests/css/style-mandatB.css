@@ -276,9 +276,6 @@ body {
 }
 
 
-<<<<<<< HEAD
-/* bouton filtre */
-=======
 .p-filtrer{
     background-color: #1D3D23;
     color: #ffffff;
@@ -306,7 +303,6 @@ a{
 }
 
 /* bouton */
->>>>>>> mandatC
 
 input[type="checkbox"].check-box {
     display: none;
