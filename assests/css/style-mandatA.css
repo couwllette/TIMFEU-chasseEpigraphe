@@ -14,61 +14,13 @@
 @import url(typo.css);
 @import url(grille.css);
 @import url(menu.css);
+
 /* Réinitialisation */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-.div-conteneur-nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.div-conteneur{
-    margin: 0 auto;
-}
-
-/* ------------------------------------------------------------------------------------------------------------------ */
-/* NAVIGATION (NAV) */
-
-.entete-nav {
-    background-color: #EFFBDD;
-    border: #1D3D23 1px solid;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 25px 50px;
-
-
-}
-
-.entete-nav-liste {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.entete-nav-item {
-    font-size: 1.2rem;
-    list-style: none;
-    text-align: center;
-    margin: 0 10px;
-}
-
-.lien--actif {
-    font-size: 1.6rem;
-    font-weight: bold;
-}
-
-.entete-nav-lien {
-    text-decoration: none;
-    color: #1D3D23;
-}
-
 
 
 /* ------------------------------------------------------------------------------------------------------------------ */
@@ -99,13 +51,14 @@ h2{
 }
 }
 
-button{
+.btnDirectionChasse{
     
     background-color:#FFDB71 ;
+    width: fit-content;
     display: inline-block;
     border-radius: 30px;
     text-align: center;
-    padding: 15px;
+    padding: 15px 40px;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;
@@ -113,8 +66,8 @@ button{
     cursor: pointer;
 
 }
-@media (min-width: 500px){
-    button{
+@media (min-width: 600px){
+    .btnDirectionChasse{
         background-color:#FFDB71 ;
         display: inline-block;
         border-radius: 30px;
@@ -130,7 +83,7 @@ button{
     }
 }
 @media (min-width: 800px){
-    button{
+    .btnDirectionChasse{
         background-color:#FFDB71 ;
         display: inline-block;
         border-radius: 30px;
@@ -145,13 +98,13 @@ button{
     
     }
 }
-button:hover {
+.btnDirectionChasse:hover {
     background-color: #1D3D23;
     color: #EFFBDD;
 
 }
 /* ------------------------------------------------------------------------------------------------------------------ */
-/* FOOTER */
+/* FOOTER
 .youtube{
     width: 120px;
 }
@@ -264,4 +217,4 @@ footer {
         padding: 5px 0;
     }
 
-}
+} */

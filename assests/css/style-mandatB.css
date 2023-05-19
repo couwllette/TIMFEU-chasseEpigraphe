@@ -26,170 +26,11 @@
     box-sizing: border-box;
 }
 
-.div-conteneur-nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
-.div-conteneur{
-    margin: 0 auto;
-}
-
-
-.logo{
-    width: 300px;
-    transition: ease-in-out 0.3s;
-}
-@media(min-width:1200px){
-    .logo{
-        width: 400px;
-    } 
-}
 
 
 /* ------------------------------------------------------------------------------------------------------------------ */
-/* TITRE PAGE */
 
-
-/* .titre-page, .titre-fiche {
-    background-color: #EFFBDD;
-    border: #1D3D23 1px solid;
-    margin: 0;
-    padding: 100px 0;
-    text-align: center;
-    color: #1D3D23;
-}
-
-.p-copyright-img-titre{
-    text-align: end;
-}
-
-.image-copyright{
-    display: flex;
-    flex-direction: row;
-    align-items: end;
-}
-
-.img-titre-fiche{
-    order: 1;
-} */ 
-
-/* ------------------------------------------------------------------------------------------------------------------ */
-/* FOOTER */
-.youtube{
-    width: 120px;
-}
-@media (min-width:600px){
-    .youtube{
-        width: 200px;
-    }
-}
-.menu-sociaux__lien {
-    background-repeat: no-repeat;
-    background-size:contain;
-    font-size: 0;
-    height: 30px;
-    display: block;
-    padding: 0 25px;
-    text-align: center;
-    background-position: center;
-}
-.menu-sociaux__item{
-    width: 200px;
-    display: flex;
-    justify-content: center;
-}
-
-.menu-sociaux {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: space-around;
-    padding: 53px 0;
-}
-
-footer {
-    background-color: #1D3D23;
-    color: #fff;
-    padding: 10px 50px 30px;
-    text-align: center;
-    
-}
-
-.footer-nav {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: space-evenly;
-    padding: 25px 0 10px;
-}
-.footer-nav-item{
-    text-align: center;
-    display: flex;
-    
-}
-.footer-nav-lien {
-    color: #fff;
-    font-size: 1rem;
-    text-decoration: none;
-    margin: 0 10px;
-    width: fit-content;
-    text-align: center;
-}
-
-.p-footer {
-    text-align: center;
-    font-size: 1.1rem;
-    padding: 5px 0;
-}
-
-@media (min-width:600px){
-    .menu-sociaux__lien {
-        background-repeat: no-repeat;
-        padding-right: 100px;
-        background-size: contain;
-        font-size: 0;
-        height: 50px;
-        display: block;
-    }
-    
-    .menu-sociaux {
-        display: flex;
-        flex-direction: row;
-        list-style: none;
-        justify-content: center;
-        padding: 53px 0;
-    }
-    
-    footer {
-        background-color: #1D3D23;
-        color: #fff;
-        padding: 10px 50px 30px;
-        
-    }
-    
-    .footer-nav {
-        display: flex;
-        flex-direction: row;
-        list-style: none;
-        justify-content: space-evenly;
-        padding: 25px 0 10px;
-    }
-    
-    .footer-nav-lien {
-        color: #fff;
-        font-size: 1.4rem;
-        text-decoration: none;
-    }
-    
-    .p-footer {
-        text-align: center;
-        font-size: 1.1rem;
-        padding: 5px 0;
-    }
-
-}
 
 
 span {
@@ -324,3 +165,48 @@ input[type="checkbox"].check-box {
   }
 
 
+/* grille des carte de personnages */
+.personnages_cartes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+.personnages_cartes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    text-align: center;
+}
+}
+
+@media (min-width: 800px) {
+    .personnages_cartes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        text-align: center;
+        margin-left: 10px;
+    }
+    }
+
+
+.carte_personnage img{
+    width: 154px;
+}
+
+
+@media (min-width: 800px) {
+.carte_personnage img{
+    width: 320px;
+    margin-left: 100px;
+}
+}
+
+@media (min-width: 600px) {
+    .carte_personnage img{
+        width: 280px;
+    }
+    }
