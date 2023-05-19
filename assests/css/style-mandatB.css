@@ -372,61 +372,42 @@ span {
 
 .filtre {
     justify-content: center;
-    margin:20px 50px;
+    /* margin:20px 50px; */
     background-color: white;
-    padding: 20px 30px;
+    /* padding: 20px 30px; */
+    margin-bottom:100px ;
 
 }
 
-@media (min-width:800px){
-    .filtre {
-        justify-content: center;
-        margin:50px 100px;
-        background-color: white;
-        padding: 20px 150px;
-    
-    }
-    }
 
-@media (min-width:600px){
-.filtre {
-    justify-content: center;
-    margin:50px 100px;
-    background-color: white;
-    padding: 20px 150px;
-
-}
-}
-
-
-.liste_1 li {
+.liste_indice li {
     list-style: none;
     display: inline-block;
     padding: 10px 15px;
 }
 
 @media (min-width:800px){
-    .liste_1 li {
+    .liste_indice li {
         list-style: none;
         padding: 10px 15px;
     }
     }
 
 @media (min-width:600px){
-.liste_1 li {
+.liste_indice li {
     list-style: none;
     padding: 10px 15px;
 }
 }
 
 
-.liste_2 li {
+.liste_secteur_activite li {
     list-style: none;
     padding: 10px 15px;
 }
 
 @media (min-width:800px){
-    .liste_2 li {
+    .liste_secteur_activite li {
         list-style: none;
         display: inline-block;
         padding: 10px 15px;
@@ -434,7 +415,7 @@ span {
     }
 
 @media (min-width:600px){
-.liste_2 li {
+.liste_secteur_activite li {
     list-style: none;
     display: inline-block;
     padding: 0px 15px;
@@ -448,23 +429,51 @@ body {
 }
 
 
+.p-filtrer{
+    background-color: #1D3D23;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px 30px;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.type-indice{
+    padding: 20px 30px;
+}
 
 
+a{
+    text-decoration: none;
+    color: #1D3D23;
 
+}
 
-
+.galerie{
+    background-color: #EFFBDD;
+    color: #1D3D23;
+    padding: 90px 50px;
+}
 
 /* bouton */
 
-input[type="checkbox"].bouton {
+input[type="checkbox"].check-box {
     display: none;
+    width: 25px;
+    height: 25px;
   }
-  input[type="checkbox"].bouton + label::before {
+  input[type="checkbox"].check-box + label::before {
     content:'';
-    border: 1px solid #FFDB71;
+    border: 2px solid #FFDB71;
+    width: 25px;
+    height: 25px;
     padding: 0px 10px;
     margin-right:  10px;
   }
-  input[type="checkbox"].bouton:checked + label::before {
+  input[type="checkbox"].check-box:checked + label::before {
     background-color: #FFDB71;
+    content:"✔";
+    color: #1D3D23;
   }
+
+

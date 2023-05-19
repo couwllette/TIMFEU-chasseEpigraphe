@@ -16,6 +16,10 @@
     <title>Nom personnage - Chasse aux épigraphes</title>
 
     <link rel="stylesheet" href="../assests/css/style-mandatC.css">
+
+    <script defer src="../assests/js/epigraphes.js"></script>
+    <script defer src="../assests/js/fiche.js"></script>
+    <script defer src="../assests/js/menu.js"></script>
 </head>
 
 <body>
@@ -24,21 +28,22 @@
     <nav class="entete-nav">
 
         <div class="div-conteneur-nav conteneur">
-            <a href="../accueil/index.html"><img class="logo" src="../assests/images/logo-chasse1.svg"></a>
-
-            <ul class="entete-nav-liste cols_6_de_12 ">
-                <li class="entete-nav-item"><a href="../accueil/index.html" class="entete-nav-lien">ACCUEIL</a></li>
-                <li class="entete-nav-item"><a href="../chasse/index.html" class="entete-nav-lien">CHASSE
-                        AUX <br>
-                        ÉPIGRAPHES</a></li>
-                <li class="entete-nav-item"><a href="../galerie/index.html" class="entete-nav-lien">GALERIE DES
-                        <br>PERSONNAGES</a></li>
-                <li class="entete-nav-item lien--actif"><a href="../fiches/sports-et-spectacles.html"
-                        class="entete-nav-lien">CARTE</a></li>
-            </ul>
+          <a href="../accueil/index.html"><img class="logo" src="../assests/images/logo-chasse1.svg"></a>
+    
+          <div class="nav">
+          <ul class="entete-nav-liste  ">
+            <li class="entete-nav-item"><a href="../accueil/index.html" class="entete-nav-lien">ACCUEIL</a></li>
+            <li class="entete-nav-item "><a href="../chasse/index.html" class="entete-nav-lien">CHASSE AUX <br>
+                ÉPIGRAPHES</a></li>
+            <li class="entete-nav-item"><a href="../galerie/index.html" class="entete-nav-lien">GALERIE DES
+                <br>PERSONNAGES</a></li>
+            <li class="entete-nav-item"><a href="../fiches/sports-et-spectacles.html" class="entete-nav-lien">CARTE</a></li>
+          </ul>
         </div>
-
-    </nav>
+    
+        </div>
+    
+      </nav>
 
     <main>
 
@@ -50,12 +55,13 @@
                 <h1 class="titre"><span class="span-prenom">HENRIETTE</span><span class="span-nom">BELLEY</span></h1>
                 <div class="image-copyright">
                     <!-- img titre fiche -->
-                    <img class="img-titre-fiche cols_6_de_12" src="../assests/images/e0001_chasse_auto_x2-530-1.jpg"
-                        width="300px" height="350px">
+                    <img class="img-titre-fiche cols_6_de_12" src="" width="300px" id="url_image">
                     <!-- copyright img titre fiche -->
-                    <p class="p-copyright-img-titre cols_3_de_12">Edmund Alleyn dans son atelier
-                        <br>© Gabor Szilasi
-                    </p>
+                    <div class="p-copyright-img-titre cols_3_de_12">
+                        <p id="titre_image">Edmund Alleyn dans son atelier</p>
+                        <p id="credit_image">© Gabor Szilasi
+                        </p>
+                    </div>
                 </div>
 
             </div>
@@ -66,7 +72,7 @@
         <!-- notes bibliographiques-->
         <div class="notes-biblios">
             <div class="conteneur div-conteneur">
-                <p>Edmund Alleyn est né à Québec en 1931. Il est un artiste peintre. Edmund Alleyn a étudié à l'école
+                <p id="notes_biographiques">Edmund Alleyn est né à Québec en 1931. Il est un artiste peintre. Edmund Alleyn a étudié à l'école
                     des
                     beaux-arts de Québec, auprès de Jean-Paul Lemieux et Jean Dallaire. Il séjourne en France de 1955 à
                     1970.
@@ -93,9 +99,11 @@
                     <img class="img-localisation" src="../assests/images/e0016-zoom-google-maps.png"
                         alt="zoom google maps localisation épigraphe de ...">
                     <h2 class="sous-titre-localisation">LOCALISATION</h2>
-                    <p class="p-localisation">Arrondissement : La Cité-Limoilou <br>
-                        Quartier : Vieux-Québec/Cap-Blanc/Colline parlementaire <br>
-                        Adresse : 85, rue Wilfrid-Laurier</p>
+                    <div class="p-localisation">
+                    <p id="arrondissement">Arrondissement : La Cité-Limoilou </p>
+                    <p id="quartier">Quartier : Vieux-Québec/Cap-Blanc/Colline parlementaire</p>   
+                    <p id="adresse">Adresse : 85, rue Wilfrid-Laurier</p>
+                    </div>
                 </div>
 
                 <div class="section-epigraphe">
@@ -119,7 +127,7 @@
 
             <!-- bande sonore -->
                 <div class="bande-sonore">
-                    <audio controls>
+                    <audio controls  id="audio_url">
                     <source src="../assests/CapsulesSonores/epigraphes_alleyn.mp3" type="audio/mpeg">
                   Your browser does not support the audio element.
                     </audio>
@@ -134,14 +142,90 @@
             </div>
             
         </div>
+    </main>
 
+    <!-- <aside role="complementary"> -->
+        
+        
+
+        <!-- Si une chasse est en cours -->
+        <!-- <div id="zoneChasseEnCours">
+            <form>
+                <fieldset>
+                    <legend>
+                        <h2>Soumettre cette fiche comme élément trouvé (<span id="nb_indice_trouve">0</span> indice trouvé sur 3)</h2>
+                    </legend>
+                    <ul>
+                        <li>
+                            <input type="radio" name="formChasse" value="personnage" id="personnage" class="screen-reader-only"
+                                required>
+                            <label for="personnage">Personnage</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="formChasse" value="lieu" id="lieu" class="screen-reader-only">
+                            <label for="lieu">Lieu</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="formChasse" value="objet" id="objet" class="screen-reader-only">
+                            <label for="objet">Objet</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <p id="message"></p>
+                <p>
+                    <button id="btnSoumettre" type="button">Soumettre</button>
+                </p>
+            </form>
+            <ul>
+                <li>
+                    <a href="chasse.html">Vérifier votre progression de la chasse</a>
+                </li>
+                <li>
+                    <a href="carte.html">Poursuivre la chasse </a>
+                </li>
+            </ul>
+        </div> -->
+    <!-- </aside> -->
         <!-- section soumission de la fiche -->
         <div class="soumission-fiche">
             <h2 class="sous-titre-soumission conteneur div-conteneur">SOUMETTRE CETTE FICHE</h2>
             <p class="p-association conteneur div-conteneur">Est-il associé à un personnage? à un objet ? à un lieu?</p>
 
-            <div class="cartes-jeu conteneur div-conteneur">
-                <svg class="carte" viewBox="0 0 310 430" fill="none"
+        <!-- Si l’utilisateur n’a pas débuté une chasse -->
+            <!-- <div id="zoneAuncuneChasseEnCours" hidden>
+                <p>Aucune chasse en cours. Si vous désirez débuter une chasse, visitez la page <a
+                    href="../chasse/index.html">Chasse</a>.</p>
+            </div> -->
+
+
+            <!-- <div class="cartes-jeu conteneur div-conteneur"> -->
+                <form>
+                    <fieldset id="banama">
+                        <legend>
+                            <h2>Soumettre cette fiche comme élément trouvé (<span id="nb_indice_trouve">0</span> indice trouvé sur 3)</h2>
+                        </legend>
+                        <ul>
+                            <li>
+                                <input type="radio" name="banane" value="personnage" id="personnage" class="screen-reader-only"
+                                    required>
+                                <label for="personnage">Personnage</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="banane" value="lieu" id="lieu" class="screen-reader-only">
+                                <label for="lieu">Lieu</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="banane" value="objet" id="objet" class="screen-reader-only">
+                                <label for="objet">Objet</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <p id="message"></p>
+                    <p>
+                        <button id="btnSoumettre" type="button">Soumettre</button>
+                    </p>
+                </form>
+                <!-- <svg class="carte" viewBox="0 0 310 430" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <rect width="310" height="430" rx="20" fill="#FFDB71" />
                     <path
@@ -179,8 +263,8 @@
                     <path
                         d="M22 386.139V46.0804C56.7634 46.0804 56.7634 46.0804 56.7634 19H255.656C255.656 46.0804 255.656 46.0804 287 46.0804V386.139C249.387 386.139 255.656 386.139 255.656 411H46.5054C46.5054 386.139 46.5054 386.139 22 386.139Z"
                         stroke="#1D3D23" stroke-width="4" />
-                </svg>
-            </div>
+                </svg> -->
+            <!-- </div> -->
 
             <p class="bouton-jeu"><button class="btn-piger-chasse" type="button">PIGER UNE CHASSE</button></p>
 
@@ -207,7 +291,7 @@
         </div>
 
 
-    </main>
+    
 
     <!-- pied de page -->
     <footer>

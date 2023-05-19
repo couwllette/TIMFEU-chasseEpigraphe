@@ -9,7 +9,7 @@
 // Déclaration d'objet(s)
 //*******************
 
-let menu = {
+let menuNav = {
     javascriptEnabled: document.body.classList.add('js'),
     strNavClosed: 'Menu',
     strNavOpen: 'Fermer',
@@ -40,7 +40,7 @@ let menu = {
   
       // Ajout de l'écouteur d'événement sur le bouton du menu
       this.refButton.addEventListener('click', function () {
-        menu.ouvrirFermerNav();
+        menuNav.ouvrirFermerNav();
       });
   
       // ajouter la classe d'état fermé au menu
@@ -60,10 +60,18 @@ let menu = {
     }
   };
   
+  // let menuFiltrer = {
+    // javascriptEnabled: document.body.classList.add('js'),
+    // strNavClosed: 'Menu',
+    // strNavOpen: 'Fermer',
+    // refButton: null,
+    // refSpan: null,
+    // refNav: document.querySelector('.nav'),
+  // };
   
   //*******************
   // Écouteurs d'événements
   //*******************
   window.addEventListener('load', function () {
-    menu.configurerNav();
+    menuNav.configurerNav();
   });
