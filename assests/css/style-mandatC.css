@@ -133,13 +133,13 @@
     position: absolute;
     width: 302px;
     height: 92px;
-    left: 10%;
+    left: 12%;
     top: 5%;
 
     font-family: 'Tiro Tamil';
     font-style: normal;
     font-weight: 400;
-    font-size: 64px;
+    font-size: 60px;
     line-height: 92px;
 
 }
@@ -155,7 +155,7 @@
         font-family: 'Tiro Tamil';
         font-style: normal;
         font-weight: 400;
-        font-size: 64px;
+        font-size: 60px;
         line-height: 92px;
     
     }

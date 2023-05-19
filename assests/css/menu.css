@@ -18,6 +18,7 @@
 .nav__control {
     background-color: #1D3D23;
     border: none;
+    border-radius: 0;
     padding: 10px;
     min-width: 40px;
 }
