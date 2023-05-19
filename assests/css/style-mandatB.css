@@ -199,12 +199,7 @@ span {
 }
 
 
-<<<<<<< HEAD
 .personnages {
-=======
-
-.carte_personnage {
->>>>>>> MandatA
     display: flex;
     flex-direction: column;
     align-items: center;
