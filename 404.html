@@ -7,9 +7,46 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>404</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        } 
+        body,
+        h1 {
+            margin: 0;
+            text-align: center;
+            margin-top: 50px;
+            color: #1D3D23;
+        } 
+
+        body {
+            background-color: #EFFBDD;
+  
+        }
+
+        canvas {
+            width: 100% !important;
+        }
+
+        @keyframes rotating {
+            from {
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+
+        .rotating {
+            animation: rotating 3s linear infinite;
+        }
+    </style>
+
 </head>
 
 <body>
+    <img src="assests/images/max.jpg" width="150px" class="rotating" alt="image de max">
     <h1>404</h1>
     <h2>OUPS... mauvaise adresse... vérifie URL</h2>
 </body>
