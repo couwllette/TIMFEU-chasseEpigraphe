@@ -45,6 +45,7 @@ const objFicheArtsVisuels = {
         const refCreditAudio = document.querySelector('.p-contexte-son');
         const refDomaine = document.querySelector('.categorie');
         const refUrlSonore = document.querySelector('#url_image_son');
+        const refEpigraphe = document.querySelector('#url_epigraphe');
 
 
 
@@ -68,6 +69,7 @@ const objFicheArtsVisuels = {
         refCreditAudio.innerHTML = objJSONepigraphes[intIdFicheCourante].AUDIO.CREDIT;
         refDomaine.innerHTML = objJSONepigraphes[intIdFicheCourante].DOMAINE;
         refUrlSonore.src = '../assests/images/img_cap/' +  intIdFicheCourante +'.jpg';
+        refEpigraphe.src = '../assests/images/images_epi/' +  intIdFicheCourante +'.svg'
 
         refBaliseAudio.load();
 
