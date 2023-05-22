@@ -29,11 +29,11 @@
     align-items: center;
 }
 
-@media(min-width:900px){
-    .div-conteneur-nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+@media(min-width:900px) {
+    .div-conteneur-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
 
@@ -62,7 +62,7 @@
     position: relative;
 }
 
-.titre-fiche{
+.titre-fiche {
     height: fit-content;
 }
 
@@ -81,7 +81,8 @@
     line-height: 92px;
 
 }
-@media (min-width:600px){
+
+@media (min-width:600px) {
     .span-prenom {
 
         position: absolute;
@@ -89,16 +90,17 @@
         height: 92px;
         left: 30%;
         top: 5%;
-    
+
         font-family: 'Tiro Tamil';
         font-style: normal;
         font-weight: 400;
         font-size: 4rem;
         line-height: 92px;
-    
+
     }
 }
-@media (min-width:800px){
+
+@media (min-width:800px) {
     .span-prenom {
 
         position: absolute;
@@ -106,15 +108,15 @@
         height: 92px;
         left: 24%;
         top: 30%;
-        background-color:#ffffff75;
+        background-color: #ffffff75;
         padding: 0 10px;
-    
+
         font-family: 'Tiro Tamil';
         font-style: normal;
         font-weight: 400;
         font-size: 64px;
         line-height: 92px;
-    
+
     }
 }
 
@@ -132,15 +134,16 @@
     font-size: 3rem;
     line-height: 92px;
 }
-@media (min-width:600px){
+
+@media (min-width:600px) {
     .span-nom {
         position: absolute;
         width: 254px;
         height: 92px;
         left: 33%;
         top: 89%;
-    
-    
+
+
         font-family: 'Tiro Tamil';
         font-style: normal;
         font-weight: 400;
@@ -148,17 +151,18 @@
         line-height: 92px;
     }
 }
-@media (min-width:800px){
+
+@media (min-width:800px) {
     .span-nom {
         position: absolute;
         width: fit-content;
         height: 92px;
         left: 61%;
         top: 55%;
-        background-color:#ffffff75;
+        background-color: #ffffff75;
         padding: 0 10px;
-    
-    
+
+
         font-family: 'Tiro Tamil';
         font-style: normal;
         font-weight: 400;
@@ -175,16 +179,21 @@
     margin-top: 100px;
     font-size: 1.2rem;
 }
-@media (min-width:600px){
+
+@media (min-width:600px) {
     .p-copyright-img-titre {
-        order: -1;;
+        order: -1;
+        ;
         text-align: end;
         margin-bottom: 30px;
         font-size: 1.3rem;
     }
-}@media (min-width:800px){
+}
+
+@media (min-width:800px) {
     .p-copyright-img-titre {
-        order: -1;;
+        order: -1;
+        ;
         text-align: end;
         margin-bottom: 30px;
     }
@@ -197,13 +206,14 @@
     flex-direction: column;
     align-items: center;
 }
-@media (min-width:600px){
+
+@media (min-width:600px) {
     .image-copyright {
-    display: flex;
-    flex-direction: row;
-    align-items: end;
-    justify-content: center;
-}
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        justify-content: center;
+    }
 }
 
 
@@ -214,17 +224,19 @@
     margin-left: 10px;
 
 }
-@media (min-width:600px){
+
+@media (min-width:600px) {
     .img-titre-fiche {
         margin-right: 20%;
     }
 }
-@media (min-width:800px){
+
+@media (min-width:800px) {
     .img-titre-fiche {
-        margin-right: 25% ;
+        margin-right: 25%;
         width: 600px;
         height: 700px;
-    
+
     }
 }
 
@@ -252,17 +264,20 @@
     background-color: #EFFBDD;
     border: #1D3D23 1px solid;
     color: #1D3D23;
-    padding: 90px 50px;
+    padding: 100px 50px;
 }
 
+
 .titre-tableau-jeu {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
+    text-align: center;
 }
-@media(max-width:599px){
+
+@media(min-width:800px) {
     .titre-tableau-jeu {
-        margin-bottom: 60px;
-        text-align: center;
-    }  
+        margin-bottom: 30px;
+        text-align: left;
+    }
 }
 
 .cartes-jeu {
@@ -272,25 +287,126 @@
     align-items: center;
 }
 
-@media (min-width:600px){
-    .cartes-jeu{
+@media (min-width:800px) {
+    .cartes-jeu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 30px 0;
+    }
+
+}
+
+
+.liste__cartes-chasse {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (min-width:800px) {
+    .liste__cartes-chasse {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+}
+
+.item__cartes-chasse {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin: 20px 0;
+}
+
+@media (min-width:800px) {
+    .item__cartes-chasse {
+        text-align: center;
+        margin: 20px 0;
+       width:calc(100%/3) ;
+    }
+}
+
+div.cache{
+    display: none;
+}
+
+.liste__cartes-chasse__zone-completee{
+    list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    }
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
     
 }
 
 
-.bouton-jeu {
-    text-align: center;
-    margin: 77px 0 0;
+.item__cartes-chasse__zone-completee {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    margin: 0 10px;
 }
 
-.btn-piger-chasse {
-    width: max-content;
-    padding: 0 30px;
-    height: 66px;
+.p_indice-chasse {
+    font-size: 1.3rem;
+    flex-grow: 1;
+}
+
+@media (min-width:800px) {
+    .p_indice-chasse {
+        font-size: 1.6rem;
+    }
+}
+
+.carte {
+    width: 50%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+@media (min-width:800px) {
+    .carte {
+
+        width: 80%;
+        margin: 0 10px;
+        margin-top: 10px;
+    }
+}
+
+.carte__zone-completee {
+    width: 100%;
+}
+
+.section__demarrer-nouvelle-chasse{
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 80px auto 0;
+    background-color: #A4BE7B;
+    border-radius: 10px;
+    padding:10px 10px 30px;
+
+}
+
+
+@media (min-width:800px) {
+    .section__demarrer-nouvelle-chasse{
+        margin: 100px auto 0;
+    font-size: 1.6rem;
+}
+}
+
+.btn-demarrer-nouvelle-chasse{
+    width: fit-content;
+    padding: 10px 20px;
     background: #1D3D23;
     border-radius: 100px;
     color: #FFDB71;
@@ -301,18 +417,164 @@
     transition: all 0.5s;
     cursor: pointer;
 }
-@media (min-width:600px){
-    .btn-piger-chasse{
-        width: 400px;
-        font-size: 1.4rem; 
+
+#zoneAucuneEnquete {
+
+    text-align: center;
+    margin: 30px auto;
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.bouton-jeu {
+    text-align: center;
+    margin: 20px 0 0;
+}
+
+
+
+.btn-piger-chasse {
+    width: max-content;
+    padding: 0 20px;
+    height: 40px;
+    background: #1D3D23;
+    border-radius: 100px;
+    color: #FFDB71;
+    font-size: 1.2rem;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+@media (min-width:800px) {
+    .btn-piger-chasse {
+        width: max-content;
+        font-size: 1.4rem;
+        height: 50px;
+        padding: 0 30px;
     }
 }
 
-.btn-piger-chasse:hover {
+.btn-piger-chasse:hover,
+.btn-demarrer-nouvelle-chasse:hover {
     background: #FFDB71;
     color: #1D3D23;
     cursor: pointer;
+}
 
+.btn__nouvelle-chasse {
+    margin-top: 20px;
+}
+
+
+
+.zoneChasseCompletee {
+    text-align: center;
+    margin: 30px auto;
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 30px;
+    font-size: 1.4rem;
+}
+
+@media (min-width:800px) {
+    .zoneChasseCompletee {
+        text-align: center;
+        margin: 30px auto;
+        border: solid 1px black;
+        border-radius: 10px;
+        padding: 30px;
+        font-size: 1.6rem;
+    }
+}
+
+.h2__zonecompletee {
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+@media (min-width:800px) {
+    .h2__zonecompletee {
+        font-size: 4rem;
+    }
+}
+
+.bouton-redirection-concours {
+    width: fit-content;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #FFDB71;
+    border-radius: 100px;
+    color: #1D3D23;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+@media (min-width:800px) {
+    .bouton-redirection-concours {
+        margin: 10px auto;
+        padding: 15px 50px;
+        width: max-content;
+        font-size: 1.6rem;
+        cursor: pointer;
+
+    }
+}
+
+
+
+.section-btns-liens-chasse {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    font-size: 1.4rem;
+}
+
+@media (min-width:900px) {
+    .section-btns-liens-chasse {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.div__piger-nouvelleChasse {
+    padding: 20px 0;
+    margin-right: 20px;
+}
+
+@media (min-width:900px) {
+    .div__piger-nouvelleChasse {
+        padding: 0;
+    }
+}
+
+
+.p-nb-indice{
+    background-color: #1D3D23;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 100px;
+    width: fit-content;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.entete-chasseEnCours{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+@media (min-width:800px) {
+    .entete-chasseEnCours{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 /* ------------------------------------------------------------------------------------------------------------------ */
@@ -332,18 +594,19 @@
     height: fit-content;
 }
 
-@media (min-width:600px){
+@media (min-width:600px) {
     .notes-biblios {
-    background-color: #1D3D23;
-    color: #EFFBDD;
-    border: #1D3D23 1px solid;
-    display: flex;
-    align-items: center;
-    padding: 90px 50px;
-    height:fit-content;
+        background-color: #1D3D23;
+        color: #EFFBDD;
+        border: #1D3D23 1px solid;
+        display: flex;
+        align-items: center;
+        padding: 90px 50px;
+        height: fit-content;
+    }
 }
-}
-@media (min-width:800px){
+
+@media (min-width:800px) {
     .notes-biblios {
         background-color: #1D3D23;
         color: #EFFBDD;
@@ -366,18 +629,20 @@
     padding: 10px 20px;
     color: #1D3D23;
 }
-@media (min-width:600px){
+
+@media (min-width:600px) {
     .categorie {
-    position: absolute;
-    top: 98%;
-    left: 30%;
-    width: fit-content;
-    background-color: #FFDB71;
-    padding: 10px 20px;
-    color: #1D3D23;
+        position: absolute;
+        top: 98%;
+        left: 30%;
+        width: fit-content;
+        background-color: #FFDB71;
+        padding: 10px 20px;
+        color: #1D3D23;
+    }
 }
-}
-@media (min-width:800px){
+
+@media (min-width:800px) {
     .categorie {
         position: absolute;
         top: 98%;
@@ -399,7 +664,8 @@
     padding: 30px 20px;
     position: relative;
 }
-@media (min-width:600px){
+
+@media (min-width:600px) {
     .infos-localisation-epigraphe {
         background-color: #EFFBDD;
         border: #1D3D23 1px solid;
@@ -407,7 +673,8 @@
         padding: 90px 50px;
     }
 }
-@media (min-width:800px){
+
+@media (min-width:800px) {
     .infos-localisation-epigraphe {
         background-color: #EFFBDD;
         border: #1D3D23 1px solid;
@@ -421,13 +688,15 @@
     padding: 19px 0;
     margin-top: 100px;
 }
-@media (min-width:600px){
+
+@media (min-width:600px) {
     .section-localisation {
         display: flex;
         padding: 19px 0;
     }
 }
-@media (min-width:800px){
+
+@media (min-width:800px) {
     .section-localisation {
         position: relative;
         display: flex;
@@ -440,7 +709,8 @@
     justify-content: space-between;
     padding: 50px 0;
 }
-@media (min-width:600px){
+
+@media (min-width:600px) {
     .section-epigraphe {
         position: relative;
         display: flex;
@@ -448,7 +718,8 @@
         padding-top: 150px;
     }
 }
-@media (min-width:800px){
+
+@media (min-width:800px) {
     .section-epigraphe {
         position: relative;
         display: flex;
@@ -468,29 +739,15 @@
     font-size: 40px;
     line-height: 92px;
 }
-@media (min-width:600px){
+
+@media (min-width:600px) {
     .sous-titre-localisation {
         position: absolute;
         top: 10%;
         left: 6%;
         width: 486px;
         height: 92px;
-    
-        font-family: 'Tiro Tamil';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 64px;
-        line-height: 92px;
-    }
-}
-@media (min-width:800px){
-    .sous-titre-localisation {
-        position: absolute;
-        top: 30%;
-        left: 37%;
-        width: 486px;
-        height: 92px;
-    
+
         font-family: 'Tiro Tamil';
         font-style: normal;
         font-weight: 400;
@@ -499,12 +756,28 @@
     }
 }
 
-.sous-titre-epigraphe{
+@media (min-width:800px) {
+    .sous-titre-localisation {
+        position: absolute;
+        top: 30%;
+        left: 37%;
+        width: 486px;
+        height: 92px;
+
+        font-family: 'Tiro Tamil';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 92px;
+    }
+}
+
+.sous-titre-epigraphe {
     position: absolute;
     padding: 20px 0;
     margin-bottom: 10px;
-    top:50%;
-    left:17%;
+    top: 50%;
+    left: 17%;
 
     font-family: 'Tiro Tamil';
     font-style: normal;
@@ -512,14 +785,15 @@
     font-size: 40px;
     line-height: 92px;
 }
-@media (min-width:600px){
-    .sous-titre-epigraphe{
+
+@media (min-width:600px) {
+    .sous-titre-epigraphe {
         position: absolute;
         top: 7%;
         left: 0;
 
 
-            
+
         font-family: 'Tiro Tamil';
         font-style: normal;
         font-weight: 400;
@@ -527,15 +801,16 @@
         line-height: 92px;
     }
 }
-@media (min-width:800px){
-    .sous-titre-epigraphe{
+
+@media (min-width:800px) {
+    .sous-titre-epigraphe {
         position: absolute;
         margin-bottom: 10px;
         top: 35%;
         left: 0;
         width: 486px;
         height: 92px;
-    
+
         font-family: 'Tiro Tamil';
         font-style: normal;
         font-weight: 400;
@@ -551,14 +826,8 @@
     margin-bottom: 50px;
     align-self: flex-end;
 }
-@media (min-width:600px){
-    .p-localisation {
-        margin-left: 25px;
-        margin-bottom: 50px;
-        align-self: flex-end;
-    }
-}
-@media (min-width:800px){
+
+@media (min-width:600px) {
     .p-localisation {
         margin-left: 25px;
         margin-bottom: 50px;
@@ -566,7 +835,15 @@
     }
 }
 
-.p-epigraphe{
+@media (min-width:800px) {
+    .p-localisation {
+        margin-left: 25px;
+        margin-bottom: 50px;
+        align-self: flex-end;
+    }
+}
+
+.p-epigraphe {
     margin-bottom: 50px;
     align-self: flex-end;
 }
@@ -574,30 +851,34 @@
 .img-localisation {
     width: 100%;
 }
-@media (min-width:600px){
-    .img-localisation {
-        width: 40.5%;
-    }
-}
-@media (min-width:800px){
+
+@media (min-width:600px) {
     .img-localisation {
         width: 40.5%;
     }
 }
 
-.img-epigraphe{
+@media (min-width:800px) {
+    .img-localisation {
+        width: 40.5%;
+    }
+}
+
+.img-epigraphe {
     order: 1;
     padding: 30px 0;
     margin-right: 80px;
 }
-@media (min-width:600px){
-    .img-epigraphe{
+
+@media (min-width:600px) {
+    .img-epigraphe {
         order: 1;
         width: 50%;
     }
 }
-@media (min-width:800px){
-    .img-epigraphe{
+
+@media (min-width:800px) {
+    .img-epigraphe {
         order: 1;
         margin-right: 80px;
     }
@@ -612,9 +893,10 @@
     border: #1D3D23 1px solid;
     color: #fff;
     padding: 90px 50px;
-    
+
 }
-@media (min-width:600px){
+
+@media (min-width:600px) {
     .section-capsule-sonore {
         position: relative;
         background-color: #1D3D23;
@@ -623,61 +905,67 @@
         padding: 90px 50px;
     }
 }
-@media (min-width:800px){
+
+@media (min-width:800px) {
     .section-capsule-sonore {
         position: relative;
         background-color: #1D3D23;
         border: #1D3D23 1px solid;
         color: #fff;
-        
+
     }
 }
 
-.sous-titre-capsule{
+.sous-titre-capsule {
     color: #EFFBDD;
     text-align: center;
     padding-bottom: 40px;
 }
-@media (min-width:600px){
-    .sous-titre-capsule{
+
+@media (min-width:600px) {
+    .sous-titre-capsule {
         color: #EFFBDD;
-    }    
-}
-@media (min-width:800px){
-    .sous-titre-capsule{
-        color: #EFFBDD;
-    }    
+    }
 }
 
-audio{
+@media (min-width:800px) {
+    .sous-titre-capsule {
+        color: #EFFBDD;
+    }
+}
+
+audio {
     margin: 40px 0;
 }
 
 
 
-.p-transcription{
+.p-transcription {
     overflow: scroll;
     width: fit-content;
     height: 100px;
     background-color: #5b5b5b;
 }
-@media (min-width:600px){
-    .p-transcription{
+
+@media (min-width:600px) {
+    .p-transcription {
         width: 500px;
     }
 }
 
-.img-capsule-sonore{
+.img-capsule-sonore {
     padding: 30px 0;
-    width:100%;
+    width: 100%;
 }
-@media (min-width:600px){
-    .img-capsule-sonore{
+
+@media (min-width:600px) {
+    .img-capsule-sonore {
         width: 50%;
     }
 }
-@media (min-width:800px){
-    .img-capsule-sonore{
+
+@media (min-width:800px) {
+    .img-capsule-sonore {
         position: absolute;
         top: 40%;
         left: 69%;
@@ -686,8 +974,8 @@ audio{
 }
 
 
-@media (min-width:800px){
-    .p-contexte-son{
+@media (min-width:800px) {
+    .p-contexte-son {
         margin-top: 15%;
         text-align: end;
         margin-left: auto;
@@ -695,6 +983,7 @@ audio{
         font-size: 1.2rem;
     }
 }
+
 /* section soumettre la fiche */
 
 
@@ -724,10 +1013,11 @@ audio{
     padding: 100px 0 50px;
 }
 
-fieldset{
+fieldset {
     border: none;
 
-} 
+}
+
 form ul {
     list-style: none;
     display: flex;
@@ -747,13 +1037,13 @@ form ul {
 input[name="formSoumission"]+label{
     align-items: center;
     justify-content: center;
-    
+
 }
 
 input[name="formSoumission"]+label img {
     width: 100%;
-    
-    
+
+
 }
 
 input[name="formSoumission"]:checked+label img{
@@ -794,40 +1084,27 @@ input[name="formSoumission"]:checked+label img{
 
 .bouton-redirection {
     margin: 50px 0;
-    width:fit-content;
-    height: fit-content;
+    width: fit-content;
     background-color: #A4BE7B;
     border-style: none;
     border-radius: 5px;
     color: #000000;
     text-align: left;
-    padding: 43px 20px;
+    padding: 10px 20px;
 }
-@media (min-width:600px){
+
+@media (min-width:600px) {
     .bouton-redirection {
         margin: 10px 0;
-        width: fit-content;
-        height: fit-content;
-        background-color: #A4BE7B;
-        border-style: none;
-        border-radius: 5px;
-        color: #000000;
-        text-align: left;
-        padding: 0 10px;
-    }  
+        padding: 10px 10px;
+    }
 }
-@media (min-width:800px){
+
+@media (min-width:800px) {
     .bouton-redirection {
         margin: 10px 0;
-        width: max-content;
-        height: 36px;
-        background-color: #A4BE7B;
-        border-style: none;
-        border-radius: 5px;
-        color: #000000;
-        text-align: left;
-        padding: 0 20px;
-    }  
+        padding: 10px 20px;
+    }
 }
 
 
@@ -840,9 +1117,23 @@ input[name="formSoumission"]:checked+label img{
     cursor: pointer;
 }
 
-span {
+.span__lienRedirection {
     font-weight: bold;
     color: #1D3D23;
     font-size: 1.4rem;
 }
 
+
+
+.section-carte{
+    background-color: #EFFBDD;
+    border: solid 1px #1D3D23;
+    
+    padding: 50px;
+}
+
+
+.section-carte p{
+    margin: 10px;
+    text-align: center;
+}

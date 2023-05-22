@@ -24,10 +24,21 @@
   <meta name="theme-color" content="#ffffff">
 
   <link rel="stylesheet" href="../assests/css/style-mandatC.css">
+  <script defer src="../assests/js/epigraphes.js"></script>
+  <script defer src="../assests/js/chasse.js"></script>
   <script defer src="../assests/js/menu.js"></script>
 </head>
 
 <body>
+
+  <noscript>
+    <p>Pour apprécier pleinement ce site, votre navigateur doit disposer de JavaScript, ce qui ne semble pas être le cas
+      présentement. Alternativement, vous pouvez consulter le site de la Ville de Québec pour découvrir les épigraphes
+      historiques :
+      <a
+        href="https://www.ville.quebec.qc.ca/citoyens/patrimoine/personnalites/plaques-ici-vecut/index.aspx">ville.quebec.qc.ca/citoyens/patrimoine/personnalites/plaques-ici-vecut/</a>
+    </p>
+  </noscript>
 
   <!-- ENTETE - MENU PRINCIPAL -->
   <nav class="entete-nav">
@@ -43,7 +54,7 @@
               ÉPIGRAPHES</a></li>
           <li class="entete-nav-item"><a href="../galerie/index.html" class="entete-nav-lien">GALERIE DES
               <br>PERSONNAGES</a></li>
-          <li class="entete-nav-item"><a href="../fiches/fiche.html" class="entete-nav-lien">CARTE</a></li>
+          <li class="entete-nav-item"><a href="../carte/index.html" class="entete-nav-lien">CARTE</a></li>
         </ul>
       </div>
 
@@ -76,13 +87,140 @@
 
       <h2 class="titre-tableau-jeu conteneur div-conteneur">Tableau du jeu</h2>
 
-      <div class="cartes-jeu conteneur div-conteneur">
-        <img src="../assests/images/carte/carte-personne-initial.png" class="carte">
-        <img src="../assests/images/carte/carte-objet-initial.png" class="carte">
-        <img src="../assests/images/carte/carte-lieu-initial.png" class="carte">
+      <!-- État initiale: aucune chasse démarrée -->
+      <div id="zoneAucuneEnquete" class="conteneur div-conteneur" hidden>
+        <p>Aucune chasse en cours</p>
+
+        <div class="cartes-jeu conteneur div-conteneur">
+
+          <ul class="liste__cartes-chasse">
+            <li class="item__cartes-chasse">
+              <img src="../assests/images/carte/carte-personne-initial.png" class="carte">
+            </li>
+            <li class="item__cartes-chasse">
+              <img src="../assests/images/carte/carte-objet-initial.png" class="carte">
+            </li>
+            <li class="item__cartes-chasse">
+              <img src="../assests/images/carte/carte-lieu-initial.png" class="carte">
+            </li>
+          </ul>
+
+        </div>
+
+        <p class="bouton-jeu"><button class="btn-piger-chasse" id="btnDebuterChasse" type="button">PIGER UNE
+            CHASSE</button></p>
       </div>
 
-      <p class="bouton-jeu"><button class="btn-piger-chasse" type="button">PIGER UNE CHASSE</button></p>
+
+
+      <!-- État chasse en cours -->
+
+      <div id="zoneChasseEnCours" class="conteneur div-conteneur" hidden>
+        <div class="entete-chasseEnCours">
+          <h2>Chasse à compléter</h2>
+        <p class="p-nb-indice"><span id="nb_indice_trouve">0</span> indice trouvé sur 3</p>
+        </div>
+        
+
+        <div class="cartes-jeu conteneur div-conteneur">
+
+          <ul class="liste__cartes-chasse">
+            <li class="item__cartes-chasse">
+              <span id="segmentpersonnage" class="p_indice-chasse">un artiste peintre avant-gardiste</span>
+              <img src="../assests/images/carte/carte-personne-initial.png" class="carte" id="carte_personnage">
+            </li>
+            <li class="item__cartes-chasse">
+              <span class="p_indice-chasse" id="segmentobjet">un artiste peintre avant-gardiste</span>
+              <img src="../assests/images/carte/carte-objet-initial.png" class="carte" id="carte_objet">
+            </li>
+            <li class="item__cartes-chasse">
+              <span class="p_indice-chasse" id="segmentlieu">un artiste peintre avant-gardiste</span>
+              <img src="../assests/images/carte/carte-lieu-initial.png" class="carte" id="carte_lieu">
+            </li>
+          </ul>
+
+        </div>
+        <div class="section-btns-liens-chasse">
+
+          <div class="div__piger-nouvelleChasse">
+
+            <p>Voulez-vous piger une nouvelle chasse?</p>
+            <p class="btn__nouvelle-chasse"><button type="button" id="btnDemarrerNouvelleChasse"
+                class="btn-piger-chasse">Piger une nouvelle chasse</button></p>
+
+          </div>
+
+          <div class="div__partir-a-la-chasse">
+            <p>Voulez-vous partir à la chasse aux indices?</p>
+
+            <p class="bouton-redirection">
+              <a class="redirection-lien" href="../galerie/index.html">Aller à la <span class="span__lienRedirection">
+                  Galerie des personnages</span>
+                <svg width="44" height="14" viewBox="0 0 44 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M35.5392 13.6233C35.2695 13.3722 35.1401 13.0688 35.1508 12.713C35.1616 12.3572 35.3023 12.0538 35.5729 11.8027L39.3818 8.2556H2C1.61798 8.2556 1.29753 8.13507 1.03865 7.89399C0.779777 7.65291 0.650788 7.35492 0.651687 7C0.651687 6.64424 0.781125 6.34583 1.04 6.10475C1.29888 5.86368 1.61888 5.74356 2 5.74439H39.3818L35.5392 2.16592C35.2695 1.9148 35.1347 1.61638 35.1347 1.27067C35.1347 0.924962 35.2695 0.626965 35.5392 0.376681C35.8088 0.12556 36.1293 0 36.5005 0C36.8717 0 37.1917 0.12556 37.4605 0.376681L43.629 6.12108C43.7639 6.24664 43.8596 6.38266 43.9162 6.52915C43.9729 6.67563 44.0007 6.83259 43.9998 7C43.9998 7.16741 43.9715 7.32436 43.9149 7.47085C43.8582 7.61734 43.763 7.75336 43.629 7.87892L37.4268 13.6547C37.1796 13.8849 36.8708 14 36.5005 14C36.1302 14 35.8097 13.8744 35.5392 13.6233Z"
+                    fill="#1D3D23" />
+                </svg>
+              </a>
+            </p>
+
+            <p class="bouton-redirection">
+              <a class="redirection-lien" href="../carte/index.html">Consulter la <span class="span__lienRedirection">Carte</span>
+                <svg width="44" height="14" viewBox="0 0 44 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M35.5392 13.6233C35.2695 13.3722 35.1401 13.0688 35.1508 12.713C35.1616 12.3572 35.3023 12.0538 35.5729 11.8027L39.3818 8.2556H2C1.61798 8.2556 1.29753 8.13507 1.03865 7.89399C0.779777 7.65291 0.650788 7.35492 0.651687 7C0.651687 6.64424 0.781125 6.34583 1.04 6.10475C1.29888 5.86368 1.61888 5.74356 2 5.74439H39.3818L35.5392 2.16592C35.2695 1.9148 35.1347 1.61638 35.1347 1.27067C35.1347 0.924962 35.2695 0.626965 35.5392 0.376681C35.8088 0.12556 36.1293 0 36.5005 0C36.8717 0 37.1917 0.12556 37.4605 0.376681L43.629 6.12108C43.7639 6.24664 43.8596 6.38266 43.9162 6.52915C43.9729 6.67563 44.0007 6.83259 43.9998 7C43.9998 7.16741 43.9715 7.32436 43.9149 7.47085C43.8582 7.61734 43.763 7.75336 43.629 7.87892L37.4268 13.6547C37.1796 13.8849 36.8708 14 36.5005 14C36.1302 14 35.8097 13.8744 35.5392 13.6233Z"
+                    fill="#1D3D23" />
+                </svg>
+              </a>
+            </p>
+
+          </div>
+
+        </div>
+
+
+      </div>
+      <!-- État chasse complétée -->
+      <div id="zoneChasseCompletee" class="conteneur div-conteneur" hidden>
+
+
+        <div class="zoneChasseCompletee" class="section__chasse-completee">
+          <h2 class="h2__zonecompletee">Bravo!</h2>
+          <p>Vous avez complété la chasse, vous pouvez maintenant participer au concours!</p>
+          <p class="bouton-redirection-concours">
+            <a class="redirection-lien" href="#">Participer au <span class="span__lienRedirection">
+                concours</span>
+              <svg width="44" height="14" viewBox="0 0 44 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M35.5392 13.6233C35.2695 13.3722 35.1401 13.0688 35.1508 12.713C35.1616 12.3572 35.3023 12.0538 35.5729 11.8027L39.3818 8.2556H2C1.61798 8.2556 1.29753 8.13507 1.03865 7.89399C0.779777 7.65291 0.650788 7.35492 0.651687 7C0.651687 6.64424 0.781125 6.34583 1.04 6.10475C1.29888 5.86368 1.61888 5.74356 2 5.74439H39.3818L35.5392 2.16592C35.2695 1.9148 35.1347 1.61638 35.1347 1.27067C35.1347 0.924962 35.2695 0.626965 35.5392 0.376681C35.8088 0.12556 36.1293 0 36.5005 0C36.8717 0 37.1917 0.12556 37.4605 0.376681L43.629 6.12108C43.7639 6.24664 43.8596 6.38266 43.9162 6.52915C43.9729 6.67563 44.0007 6.83259 43.9998 7C43.9998 7.16741 43.9715 7.32436 43.9149 7.47085C43.8582 7.61734 43.763 7.75336 43.629 7.87892L37.4268 13.6547C37.1796 13.8849 36.8708 14 36.5005 14C36.1302 14 35.8097 13.8744 35.5392 13.6233Z"
+                  fill="#1D3D23" />
+              </svg>
+            </a>
+          </p>
+        </div>
+
+        <div class="section__demarrer-nouvelle-chasse">
+
+          <ul class="liste__cartes-chasse__zone-completee">
+            <li class="item__cartes-chasse__zone-completee">
+              <img src="../assests/images/carte/carte-personne-initial.png" class="carte__zone-completee">
+            </li>
+            <li class="item__cartes-chasse__zone-completee">
+              <img src="../assests/images/carte/carte-objet-initial.png" class="carte__zone-completee">
+            </li>
+            <li class="item__cartes-chasse__zone-completee">
+              <img src="../assests/images/carte/carte-lieu-initial.png" class="carte__zone-completee">
+            </li>
+          </ul>
+
+          <p>Voulez-vous redémarrer une nouvelle chasse?</p>
+          <p class="bouton-jeu"><button class="btn-demarrer-nouvelle-chasse" id="btnRedemarrerChasse"
+              type="button">RECOMMENCER UNE CHASSE</button></p>
+
+        </div>
+
+      </div>
+
 
     </div>
 
@@ -99,7 +237,7 @@
           <li class="footer-nav-item"><a href="../galerie/index.html" class="footer-nav-lien">Galerie des
               personnages</a>
           </li>
-          <li class="footer-nav-item"><a href="" class="footer-nav-lien">Carte</a></li>
+          <li class="footer-nav-item"><a href="../carte/index.html" class="footer-nav-lien">Carte</a></li>
         </ul>
       </div>
 

@@ -45,7 +45,7 @@
                             ÉPIGRAPHES</a></li>
                     <li class="entete-nav-item"><a href="../galerie/index.html" class="entete-nav-lien">GALERIE DES
                             <br>PERSONNAGES</a></li>
-                    <li class="entete-nav-item"><a href="../fiches/fiche.html" class="entete-nav-lien">CARTE</a></li>
+                    <li class="entete-nav-item"><a href="../carte/index.html" class="entete-nav-lien">CARTE</a></li>
                 </ul>
             </div>
 
@@ -142,8 +142,7 @@
                     <p class="p-transcription">Mon père est né en 1931 (...)</p>
                 </div>
 
-                <img class="img-capsule-sonore" src="" width="100px" id="url_image_son"
-                alt="edmund alleyn">
+                <img class="img-capsule-sonore" src="" width="100px" id="url_image_son" alt="edmund alleyn">
 
                 <p class="p-contexte-son cols_6_de_12">Jennifer Alleyn est cinéaste. Elle s’investit dans la
                     transmission de l’œuvre de
@@ -151,18 +150,15 @@
             </div>
 
         </div>
+        
     </main>
 
-
-    <!-- section soumission de la fiche -->
-    <div class="soumission-fiche">
-        <h2 class="sous-titre-soumission conteneur div-conteneur">SOUMETTRE CETTE FICHE</h2>
-        <p class="p-association conteneur div-conteneur">Est-il associé à un personnage? à un objet ? à un lieu?</p>
-
+    <aside role="complementary">
         <!-- Si l’utilisateur n’a pas débuté une chasse -->
         <div id="zoneAuncuneChasseEnCours" hidden>
-            <p>Aucune chasse en cours. Si vous désirez débuter une chasse, visitez la page <a
-                    href="../chasse/index.html">Chasse</a>.</p>
+            <h2>Soumettre cette fiche comme pièce à conviction</h2>
+            <p><span id="statusChasse">Aucune chasse en cours. Si vous désirez débuter une chasse, visitez la page <a
+                    href="chasse.html">Chasse</a>.</span></p>
         </div>
 
 
@@ -208,31 +204,7 @@
 
 
         </div>
-
-        <p class="bouton-jeu"><button class="btn-piger-chasse" type="button">PIGER UNE CHASSE</button></p>
-
-        <p class="message-erreur conteneur div-conteneur">Bravo!</p>
-        <div class="conteneur div-conteneur">
-            <p class="bouton-redirection"><a class="redirection-lien" href="../chasse/index.html">Aller à <span>
-                        Chasse
-                        aux épigraphes</span>
-                    pour vérifier votre progression <svg width="44" height="14" viewBox="0 0 44 14" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M35.5392 13.6233C35.2695 13.3722 35.1401 13.0688 35.1508 12.713C35.1616 12.3572 35.3023 12.0538 35.5729 11.8027L39.3818 8.2556H2C1.61798 8.2556 1.29753 8.13507 1.03865 7.89399C0.779777 7.65291 0.650788 7.35492 0.651687 7C0.651687 6.64424 0.781125 6.34583 1.04 6.10475C1.29888 5.86368 1.61888 5.74356 2 5.74439H39.3818L35.5392 2.16592C35.2695 1.9148 35.1347 1.61638 35.1347 1.27067C35.1347 0.924962 35.2695 0.626965 35.5392 0.376681C35.8088 0.12556 36.1293 0 36.5005 0C36.8717 0 37.1917 0.12556 37.4605 0.376681L43.629 6.12108C43.7639 6.24664 43.8596 6.38266 43.9162 6.52915C43.9729 6.67563 44.0007 6.83259 43.9998 7C43.9998 7.16741 43.9715 7.32436 43.9149 7.47085C43.8582 7.61734 43.763 7.75336 43.629 7.87892L37.4268 13.6547C37.1796 13.8849 36.8708 14 36.5005 14C36.1302 14 35.8097 13.8744 35.5392 13.6233Z"
-                            fill="#1D3D23" />
-                    </svg>
-                </a></p>
-            <p class="bouton-redirection"><a class="redirection-lien" href="">Consulter la <span>Carte</span> <svg
-                        width="44" height="14" viewBox="0 0 44 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M35.5392 13.6233C35.2695 13.3722 35.1401 13.0688 35.1508 12.713C35.1616 12.3572 35.3023 12.0538 35.5729 11.8027L39.3818 8.2556H2C1.61798 8.2556 1.29753 8.13507 1.03865 7.89399C0.779777 7.65291 0.650788 7.35492 0.651687 7C0.651687 6.64424 0.781125 6.34583 1.04 6.10475C1.29888 5.86368 1.61888 5.74356 2 5.74439H39.3818L35.5392 2.16592C35.2695 1.9148 35.1347 1.61638 35.1347 1.27067C35.1347 0.924962 35.2695 0.626965 35.5392 0.376681C35.8088 0.12556 36.1293 0 36.5005 0C36.8717 0 37.1917 0.12556 37.4605 0.376681L43.629 6.12108C43.7639 6.24664 43.8596 6.38266 43.9162 6.52915C43.9729 6.67563 44.0007 6.83259 43.9998 7C43.9998 7.16741 43.9715 7.32436 43.9149 7.47085C43.8582 7.61734 43.763 7.75336 43.629 7.87892L37.4268 13.6547C37.1796 13.8849 36.8708 14 36.5005 14C36.1302 14 35.8097 13.8744 35.5392 13.6233Z"
-                            fill="#1D3D23" />
-                    </svg></a></p>
-        </div>
-
-    </div>
-
+    </aside>
 
 
 
@@ -248,7 +220,7 @@
                     <li class="footer-nav-item"><a href="../galerie/index.html" class="footer-nav-lien">Galerie des
                             personnages</a>
                     </li>
-                    <li class="footer-nav-item"><a href="" class="footer-nav-lien">Carte</a></li>
+                    <li class="footer-nav-item"><a href="../carte/index.html" class="footer-nav-lien">Carte</a></li>
                 </ul>
             </div>
 

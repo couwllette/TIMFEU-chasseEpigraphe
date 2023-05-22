@@ -53,8 +53,7 @@
               ÉPIGRAPHES</a></li>
           <li class="entete-nav-item"><a href="../galerie/index.html" class="entete-nav-lien lien--actif">GALERIE DES
               <br>PERSONNAGES</a></li>
-          <li class="entete-nav-item"><a href="../fiches/fiche.html" class="entete-nav-lien">CARTE</a>
-          </li>
+          <li class="entete-nav-item"><a href="../carte/index.html" class="entete-nav-lien">CARTE</a></li>
         </ul>
       </div>
 
@@ -65,153 +64,162 @@
   <!-- titre page -->
   <h1 class="titre-page">GALERIE DES PERSONNAGES</h1>
 
-<div class="galerie">
-  <!-- filtre -->
-  <div class="filtre">
-    <div class="p-filtrer">
-      <p>Filtrer</p>
+  <div class="galerie">
+    <!-- filtre -->
+    <div class="filtre">
+      <div class="p-filtrer">
+        <p>Filtrer</p>
+      </div>
+
+      <div class="type-indice">
+
+        <p>Par type d'indice:</p>
+        <br>
+        <ul class="liste_indice">
+          <li>
+            <input class="check-box" type="checkbox" id="personnage" name="indice" value="personnage"
+              data-critere="personnage">
+            <label class='label' for="personnage">Personnage</label>
+          </li>
+
+          <li>
+            <input class="check-box" type="checkbox" id="objet" name="indice" value="objet" data-critere="objet">
+            <label class='label' for="objet">Objet</label>
+          </li>
+
+          <li>
+            <input class="check-box" type="checkbox" id="lieu" name="indice" value="lieu" data-critere="lieu">
+            <label class='label' for="lieu">Lieu</label>
+          </li>
+        </ul>
+
+        <br>
+        <p>Par secteur d'activité:</p>
+        <br>
+        <ul class="liste_secteur_activite">
+          <li>
+            <input class="check-box" type="checkbox" id="sport" name="secteur_activite" value="sport"
+              data-secteur="sport">
+            <label class='label' for="sport">Sports et spectacles</label>
+          </li>
+
+          <li>
+            <input class="check-box" type="checkbox" id="science" name="secteur_activite" value="science"
+              data-secteur="science">
+            <label class='label' for="science">Sciences et lettres</label>
+          </li>
+
+          <li>
+            <input class="check-box" type="checkbox" id="economie" name="secteur_activite" value="economie"
+              data-secteur="economie">
+            <label class='label' for="economie">Économie et politique</label>
+          </li>
+
+          <li>
+            <input class="check-box" type="checkbox" id="art" name="secteur_activite" value="art" data-secteur="art">
+            <label class='label' for="art">Arts visuels</label>
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <div class="type-indice">
-
-      <p>Par type d'indice:</p>
-      <br>
-      <ul class="liste_indice">
-        <li>
-          <input class="check-box" type="checkbox" id="personnage" name="indice" value="personnage"
-            data-critere="personnage">
-          <label class='label' for="personnage">Personnage</label>
-        </li>
-
-        <li>
-          <input class="check-box" type="checkbox" id="objet" name="indice" value="objet" data-critere="objet">
-          <label class='label' for="objet">Objet</label>
-        </li>
-
-        <li>
-          <input class="check-box" type="checkbox" id="lieu" name="indice" value="lieu" data-critere="lieu">
-          <label class='label' for="lieu">Lieu</label>
-        </li>
-      </ul>
-
-      <br>
-      <p>Par secteur d'activité:</p>
-      <br>
-      <ul class="liste_secteur_activite">
-        <li>
-          <input class="check-box" type="checkbox" id="sport" name="secteur_activite" value="sport"
-            data-secteur="sport">
-          <label class='label' for="sport">Sports et spectacles</label>
-        </li>
-
-        <li>
-          <input class="check-box" type="checkbox" id="science" name="secteur_activite" value="science"
-            data-secteur="science">
-          <label class='label' for="science">Sciences et lettres</label>
-        </li>
-
-        <li>
-          <input class="check-box" type="checkbox" id="economie" name="secteur_activite" value="economie"
-            data-secteur="economie">
-          <label class='label' for="economie">Économie et politique</label>
-        </li>
-
-        <li>
-          <input class="check-box" type="checkbox" id="art" name="secteur_activite" value="art" data-secteur="art">
-          <label class='label' for="art">Arts visuels</label>
-        </li>
-      </ul>
-    </div>
-  </div>
 
 
 
+    <!-- Carte de jeux -->
 
-  <!-- Carte de jeux -->
-  
 
 
     <div class="personnage">
       <div class="personnages_cartes">
 
-      <div class="carte_personnage" data-critere="personnage" data-id="e0001" data-secteur="art">
-        <a href="../fiches/fiche.html?id=e0001">
-          <img src="../assests/images/galerie/vert/e0001.png">
-          <p>Edmund Alleyn</p>
-        </a>
-      </div>
+        <div class="carte_personnage" data-critere="personnage" data-id="e0001" data-secteur="art">
+          <a href="../fiches/fiche.html?id=e0001">
+            <img src="../assests/images/galerie/vert/e0001.png">
+            <p>Edmund Alleyn</p>
+          </a>
+        </div>
 
-      <div class="carte_personnage" data-critere="objet" data-id="e0002" data-secteur="science">
-        <a href="../fiches/fiche.html?id=e0002">
-          <img src="../assests/images/galerie/vert/e0002.png">
-          <p>Philippe-Joseph Aubert de Gaspé</p>
-        </a>
-      </div>
+        <div class="carte_personnage" data-critere="objet" data-id="e0002" data-secteur="science">
+          <a href="../fiches/fiche.html?id=e0002">
+            <img src="../assests/images/galerie/vert/e0002.png">
+            <p>Philippe-Joseph Aubert de Gaspé</p>
+          </a>
+        </div>
 
-      <div class="carte_personnage" data-critere="objet" data-id="e0004" data-secteur="sport">
-        <a href="../fiches/fiche.html?id=e0004">
-        <img src="../assests/images/galerie/vert/e0004.png">
-        <p>Henriette Belley</p>
-        </a>
-      </div>
+        <div class="carte_personnage" data-critere="objet" data-id="e0004" data-secteur="sport">
+          <a href="../fiches/fiche.html?id=e0004">
+            <img src="../assests/images/galerie/vert/e0004.png">
+            <p>Henriette Belley</p>
+          </a>
+        </div>
 
-      <div class="carte_personnage" data-critere="lieu" data-id="e0005" data-secteur="science">
-        <a href="../fiches/fiche.html?id=e0005">
-        <img src="../assests/images/galerie/vert/e0005.png">
-        <p>Robert Blatter </p></a>
-      </div>
+        <div class="carte_personnage" data-critere="lieu" data-id="e0005" data-secteur="science">
+          <a href="../fiches/fiche.html?id=e0005">
+            <img src="../assests/images/galerie/vert/e0005.png">
+            <p>Robert Blatter </p>
+          </a>
+        </div>
 
-      <div class="carte_personnage" data-critere="objet" data-id="e0007" data-secteur="economie">
-        <a href="../fiches/fiche.html?id=e0007">
-        <img src="../assests/images/galerie/vert/e0007.png">
-        <p>Joseph Knight Boswell</p></a>
-      </div>
+        <div class="carte_personnage" data-critere="objet" data-id="e0007" data-secteur="economie">
+          <a href="../fiches/fiche.html?id=e0007">
+            <img src="../assests/images/galerie/vert/e0007.png">
+            <p>Joseph Knight Boswell</p>
+          </a>
+        </div>
 
-      <div class="carte_personnage" data-critere="personnage" data-id="e0008" data-secteur="economie">
-        <a href="../fiches/fiche.html?id=e0008">
-        <img src="../assests/images/galerie/vert/e0008.png">
-        <p>Marthe Caillaud</p></a>
-      </div>
+        <div class="carte_personnage" data-critere="personnage" data-id="e0008" data-secteur="economie">
+          <a href="../fiches/fiche.html?id=e0008">
+            <img src="../assests/images/galerie/vert/e0008.png">
+            <p>Marthe Caillaud</p>
+          </a>
+        </div>
 
-      <div class="carte_personnage" data-critere="lieu" data-id="e0012" data-secteur="sport">
-        <a href="../fiches/fiche.html?id=e0012">
-        <img src="../assests/images/galerie/vert/e0012.png">
-        <p>Johnny Farago</p></a>
-      </div>
+        <div class="carte_personnage" data-critere="lieu" data-id="e0012" data-secteur="sport">
+          <a href="../fiches/fiche.html?id=e0012">
+            <img src="../assests/images/galerie/vert/e0012.png">
+            <p>Johnny Farago</p>
+          </a>
+        </div>
 
-      <div class="carte_personnage" data-critere="personnage" data-id="e0015" data-secteur="sport">
-        <a href="../fiches/fiche.html?id=e0015">
-        <img src="../assests/images/galerie/vert/e0015.png">
-        <p>Camille Henry</p></a>
-      </div>
+        <div class="carte_personnage" data-critere="personnage" data-id="e0015" data-secteur="sport">
+          <a href="../fiches/fiche.html?id=e0015">
+            <img src="../assests/images/galerie/vert/e0015.png">
+            <p>Camille Henry</p>
+          </a>
+        </div>
 
-      <div class="carte_personnage" data-critere="lieu" data-id="e0016" data-secteur="art">
-        <a href="../fiches/fiche.html?id=e0016">
-        <img src="../assests/images/galerie/vert/e0016.png">
-        <p>Louis Jobin</p></a>
-      </div>
+        <div class="carte_personnage" data-critere="lieu" data-id="e0016" data-secteur="art">
+          <a href="../fiches/fiche.html?id=e0016">
+            <img src="../assests/images/galerie/vert/e0016.png">
+            <p>Louis Jobin</p>
+          </a>
+        </div>
 
-      <div class="carte_personnage" data-critere="personnage" data-id="e0019" data-secteur="science">
-        <a href="../fiches/fiche.html?id=e0019">
-        <img src="../assests/images/galerie/vert/e0019.png">
-        <p>Sigismund Mohr</p></a>
-      </div>
+        <div class="carte_personnage" data-critere="personnage" data-id="e0019" data-secteur="science">
+          <a href="../fiches/fiche.html?id=e0019">
+            <img src="../assests/images/galerie/vert/e0019.png">
+            <p>Sigismund Mohr</p>
+          </a>
+        </div>
 
-      <div class="carte_personnage" data-critere="objet" data-id="e0021" data-secteur="art">
-        <a href="../fiches/fiche.html?id=e0021">
-        <img src="../assests/images/galerie/vert/e0021.png">
-        <p>Alfred Pellan</p></a>
-      </div>
+        <div class="carte_personnage" data-critere="objet" data-id="e0021" data-secteur="art">
+          <a href="../fiches/fiche.html?id=e0021">
+            <img src="../assests/images/galerie/vert/e0021.png">
+            <p>Alfred Pellan</p>
+          </a>
+        </div>
 
-      <div class="carte_personnage" data-critere="lieu" data-id="e0022" data-secteur="economie">
-        <a href="../fiches/fiche.html?id=e0022">
-        <img src="../assests/images/galerie/vert/e0022.png">
-        <p>Maurice Pollack</p></a>
-      </div>
+        <div class="carte_personnage" data-critere="lieu" data-id="e0022" data-secteur="economie">
+          <a href="../fiches/fiche.html?id=e0022">
+            <img src="../assests/images/galerie/vert/e0022.png">
+            <p>Maurice Pollack</p>
+          </a>
+        </div>
 
+      </div>
     </div>
   </div>
-</div>
   <!-- pied de page -->
   <footer>
     <div class="conteneur div-conteneur">
@@ -223,7 +231,7 @@
           <li class="footer-nav-item"><a href="../galerie/index.html" class="footer-nav-lien">Galerie des
               personnages</a>
           </li>
-          <li class="footer-nav-item"><a href="" class="footer-nav-lien">Carte</a></li>
+          <li class="footer-nav-item"><a href="../carte/index.html" class="footer-nav-lien">Carte</a></li>
         </ul>
       </div>
 
