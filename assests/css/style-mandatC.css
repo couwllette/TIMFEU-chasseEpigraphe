@@ -422,8 +422,6 @@ div.cache{
 
     text-align: center;
     margin: 30px auto;
-    border: solid 1px black;
-    border-radius: 10px;
     padding: 30px;
 }
 
@@ -452,7 +450,7 @@ div.cache{
 @media (min-width:800px) {
     .btn-piger-chasse {
         width: max-content;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         height: 50px;
         padding: 0 30px;
     }
@@ -561,6 +559,7 @@ div.cache{
     width: fit-content;
     font-size: 1.4rem;
     text-align: center;
+    margin: 20px 0;
 }
 
 .entete-chasseEnCours{
@@ -988,12 +987,12 @@ audio {
 /* section soumettre la fiche */
 
 
-.carte{
+.carte-fiche{
     width: 60%;
     margin-bottom: 10px;
 }
 @media (min-width:600px){
-    .carte{
+    .carte-fiche{
       
     width: 20%;
     margin: 0 10px;
@@ -1007,7 +1006,7 @@ audio {
 }
 
 .p-association {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .message-erreur {
@@ -1019,65 +1018,86 @@ fieldset {
 
 }
 
+
+
 form ul {
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    
+}
+
+.btn__soumission{
+    text-align: center;
+    margin: 70px 0 20px;
+}
+
+
+.div-liens-fiche{
+    margin: 100px 0 0;
 }
 
 /*BOUTONS CARTES*/
 @media (max-width:600px){
     .liste-cartes{
-    display: grid;
-    grid-template-columns: 1fr;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    .liste-cartes li {
+        width: 300px;
+    }
 }
 
-input[name="formSoumission"]+label{
+/* input[name="formSoumission"]+label{
     align-items: center;
     justify-content: center;
 
-}
+} */
 
-input[name="formSoumission"]+label img {
+/* input[name="formSoumission"]+label img {
     width: 100%;
 
 
-}
+} */
 
 input[name="formSoumission"]:checked+label img{
     border: 4px #1D3D23 solid;
     padding: 0;
+    margin: 0 auto;
+    border-radius: 9%;
+}
+
+input[name="formSoumission"]:disabled+label img{
+    filter: grayscale(100%);
+    padding: 0;
     margin: 0;
-    width: 100%;
+   
     border-radius: 9%;
 }
 
 
-@media (min-width:600px){
+/* @media (min-width:600px){
     input[name="formSoumission"]+label{
     display: block;
     align-items: center;
     justify-content: center;
     
-}
+} */
 
 input[name="formSoumission"]+label img {
     width: 80%;
-    
-    
 }
 
-input[name="formSoumission"]:checked+label img{
+/* input[name="formSoumission"]:checked+label img{
     border: 4px #1D3D23 solid;
     border-radius: 9%;
     padding: 0;
     margin: 14px;
-    width: 80%;
-}
-}
+} */
+
 
 
 
