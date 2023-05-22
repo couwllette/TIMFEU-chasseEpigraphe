@@ -662,6 +662,7 @@ div.cache{
     border: #1D3D23 1px solid;
     color: #1D3D23;
     padding: 30px 20px;
+    padding-bottom: 0;
     position: relative;
 }
 
@@ -706,8 +707,9 @@ div.cache{
 
 
 .section-epigraphe {
+    position: relative;
     justify-content: space-between;
-    padding: 50px 0;
+    padding: 70px 0;
 }
 
 @media (min-width:600px) {
@@ -776,7 +778,7 @@ div.cache{
     position: absolute;
     padding: 20px 0;
     margin-bottom: 10px;
-    top: 50%;
+    top: 0%;
     left: 17%;
 
     font-family: 'Tiro Tamil';
@@ -867,7 +869,6 @@ div.cache{
 .img-epigraphe {
     order: 1;
     padding: 30px 0;
-    margin-right: 80px;
 }
 
 @media (min-width:600px) {

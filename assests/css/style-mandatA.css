@@ -50,13 +50,36 @@ body{
 .main{
     width: auto;
     margin: 10px;
-    padding: 10% 0 10%;
+    padding: 40px 0 10%;
 }
 
 h2{
     font-family:'Lexend Zetta', sans-serif;
     font-size: 1.5em;
 }
+
+.texte-accueil{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+
+.epigraphe_accueil{
+    width: 200px;
+    align-self: center;
+    margin-bottom: 30px;
+}
+
+@media (min-width:600px){
+    .epigraphe_accueil{
+        width: 300px;
+        align-self: center;
+        margin-bottom: 30px;
+}
+}
+
+
 /* ------------------------------------------------------------------------------------------------------------------ */
 /* BOUTON */
 .pbouton{

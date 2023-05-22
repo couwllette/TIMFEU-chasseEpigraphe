@@ -139,6 +139,9 @@ footer {
     text-align: center;
     
 }
+.lien-telephone{
+    color: #FFDB71;
+}
 
 .footer-nav {
     display: flex;
