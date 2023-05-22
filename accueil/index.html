@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,11 +30,21 @@
     <script defer src="../assests/js/menu.js"></script>
 </head>
 <body>
+
+  <noscript>
+    <p>Pour apprécier pleinement ce site, votre navigateur doit disposer de JavaScript, ce qui ne semble pas être le cas
+      présentement. Alternativement, vous pouvez consulter le site de la Ville de Québec pour découvrir les épigraphes
+      historiques :
+      <a
+        href="https://www.ville.quebec.qc.ca/citoyens/patrimoine/personnalites/plaques-ici-vecut/index.aspx">ville.quebec.qc.ca/citoyens/patrimoine/personnalites/plaques-ici-vecut/</a>
+    </p>
+  </noscript>
+
  <!-- ENTETE - MENU PRINCIPAL -->
- <nav class="entete-nav">
+ <nav role="banner" class="entete-nav">
 
   <div class="div-conteneur-nav conteneur">
-    <a href="../accueil/index.html"><img class="logo" src="../assests/images/logo-chasse1.svg"></a>
+    <a href="../accueil/index.html"><img class="logo" src="../assests/images/logo-chasse1.svg" alt="logo d'une carte avec titre: Chasse aux Épigraphes dans la ville de Quebec"></a>
 
     <div class="nav">
       <ul class="entete-nav-liste  ">
@@ -55,13 +65,13 @@
 <!-- main -->
     <main>
        <div class="video">
-        <video width="100%" src="../assests/video/ouellettec_chasseEpigraphe.mp4" poster="../assests/images/miniature.jpg" alt="Animation d'introduction de la chasse aux épigraphes" controls></video>
+        <video width="100%" src="../assests/video/ouellettec_chasseEpigraphe.mp4" poster="../assests/images/miniature.jpg" controls></video>
       </div>
 
 
     <div class="main">
         <div class="texte-accueil div-conteneur conteneur">
-          <img class="epigraphe_accueil" src="../assests/images/images_epi/e0001.svg" width="200px" alt="edmund alleyn">
+          <img class="epigraphe_accueil" src="../assests/images/images_epi/e0001.svg" width="200" alt="Épigraphe">
         <p> Les 135 plaques « Ici vécut » présentes sur le territoire de la ville de Québec permettent de rappeler de belle façon le souvenir de personnes qui, chacune à leur manière, ont laissé leur marque dans la société québécoise. De ces 135 plaques, 12 ont été sélectionnées pour ce projet.</p><br>
         <p>De manière ludique, venez découvrir des lieux, des hommes et des femmes d'exception. Parcourez les fiches de ces personnages et découvrez leur histoire, écoutez les témoignages des gens qui les ont côtoyés. Laissez-vous raconter des anecdotes savoureuses et des faits réels qui nous éclaire sur un passé pas si lointain…</p><br>
             <p>Participez à la chasse aux épigraphes et courez la chance de gagner un repas pour deux à l'Auberge des Illustres voisins.</p>
@@ -79,7 +89,7 @@
       
 
       <!-- FOOTER -->
-  <footer>
+  <footer role="contentinfo">
     <div class="conteneur div-conteneur">
     <div>
       <ul class="footer-nav">
