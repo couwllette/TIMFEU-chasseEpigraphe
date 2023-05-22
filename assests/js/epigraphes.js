@@ -31,7 +31,7 @@ const objJSONepigraphes = {
     "DOMAINE": "Arts visuels",
     "CHASSE": {
       "CATEGORIE": "personnage",
-      "INDICE": "un artiste peintre avant-gardiste",
+      "INDICE": "Un artiste peintre avant-gardiste",
       "REPONSE": "<strong>Edmund Alleyn</strong>, un artiste peintre avant-gardiste"
     }
   },
@@ -227,7 +227,7 @@ const objJSONepigraphes = {
     "DOMAINE": "Sports et spectacles",
     "CHASSE": {
       "CATEGORIE": "personnage",
-      "INDICE": "l’Anguille",
+      "INDICE": "L’Anguille",
       "REPONSE": "<strong>Camille Henry</strong>, alias l’Anguille"
     }
   },

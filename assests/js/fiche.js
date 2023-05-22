@@ -24,9 +24,9 @@ const objFicheArtsVisuels = {
         console.log(intIdFicheCourante);
 
 
-        // localStorage.setItem(intIdFicheCourante, true);
+        localStorage.setItem(intIdFicheCourante, true);
 
-        // document.querySelector('#nb_indice_trouve').innerHTML = localStorage.nombre_indice_trouve;
+        document.querySelector('#nb_indice_trouve').innerHTML = localStorage.nombre_indice_trouve;
 
         const refPrenom = document.querySelector('.span-prenom');
         const refNom = document.querySelector('.span-nom');

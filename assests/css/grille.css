@@ -1,5 +1,15 @@
 
 /*** Classe conteneur pour le centrage et l'affichage de la grille en arrière-plan ***/
+
+.conteneur{
+    margin:0;
+}
+
+@media (min-width: 600px) {
+    .conteneur {
+        margin: 0 20px;
+    }
+}
 @media (min-width: 1270px) {
     .conteneur {
         margin: 0 20px;
