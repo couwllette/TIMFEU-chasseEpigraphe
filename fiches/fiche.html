@@ -150,60 +150,108 @@
             </div>
 
         </div>
-        
+
     </main>
 
-    <aside role="complementary">
-        <!-- Si l’utilisateur n’a pas débuté une chasse -->
-        <div id="zoneAuncuneChasseEnCours" hidden>
-            <h2>Soumettre cette fiche comme pièce à conviction</h2>
-            <p><span id="statusChasse">Aucune chasse en cours. Si vous désirez débuter une chasse, visitez la page <a
-                    href="chasse.html">Chasse</a>.</span></p>
-        </div>
+    <aside role="complementary" class="soumission-fiche">
+        <div class="conteneur div-conteneur">
+    
+            
+            
 
-
-        <div class="cartes-jeu conteneur div-conteneur">
-            <!-- Si une chasse est en cours -->
-            <div id="zoneChasseEnCours">
-                <form>
-                    <fieldset>
-                        <legend>
-                            <h2><span id="nb_indice_trouve">0</span> indice
-                                trouvé sur 3</h2>
-                        </legend>
-                        <ul class="liste-cartes">
-                            <li>
-                                <input type="radio" name="formSoumission" value="personnage" id="personnage" class="screen-reader-only"
-                                    required>
-                                <label for="personnage">
-                                    <img src="../assests/images/carte/carte-personne-initial.png" class="carte">
-                                </label>
-                            </li>
-                            <li>
-                                <input type="radio" name="formSoumission" value="lieu" id="lieu" class="screen-reader-only">
-                                <label for="lieu">
-                                    <img src="../assests/images/carte/carte-objet-initial.png" class="carte">
-                                </label>
-                            </li>
-                            <li>
-                                <input type="radio" name="formSoumission" value="objet" id="objet" class="screen-reader-only">
-                                <label for="objet">
-                                    <img src="../assests/images/carte/carte-lieu-initial.png" class="carte" >
-                                </label>
-                            </li>
-                        </ul>
-                    </fieldset>
-                    <p id="message"></p>
-                    <p>
-                        <button id="btnSoumettre" type="button">Soumettre</button>
-                    </p>
-                </form>
-
+            <!-- Si l’utilisateur n’a pas débuté une chasse -->
+            <div id="zoneAuncuneChasseEnCours" hidden>
+                <h2>Soumettre cette fiche</h2>
+                <p><span id="statusChasse">Aucune chasse en cours. Si vous désirez débuter une chasse, visitez la page
+                        <a style="text-decoration: none; color: #1D3D23; font-weight: bold;" href="../chasse/index.html">Chasse</a>.</span></p>
             </div>
 
 
+            <div class="cartes-jeu">
+                <!-- Si une chasse est en cours -->
+                <div id="zoneChasseEnCours">
+                    <form>
+                        <fieldset>
+                            <legend>
+                                <h2>Soumettre cette fiche</h2>
+                                <p class="p-association">Est-il associé à un personnage? à un objet? à un lieu?</p>
+                            </legend>
+                            <p class="p-nb-indice"><span id="nb_indice_trouve">0</span> indice(s) trouvé(s) sur 3</p>
+                            <ul class="liste-cartes">
+                                <li>
+                                    <input type="radio" name="formSoumission" value="personnage" id="personnage"
+                                        class="screen-reader-only" required>
+                                    <label for="personnage">
+                                        <img src="../assests/images/carte/carte-personne-initial.png"
+                                            class="carte-fiche">
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="formSoumission" value="objet" id="objet"
+                                        class="screen-reader-only">
+                                    <label for="objet">
+                                        <img src="../assests/images/carte/carte-objet-initial.png" class="carte-fiche">
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="formSoumission" value="lieu" id="lieu"
+                                        class="screen-reader-only">
+                                    <label for="lieu">
+                                        <img src="../assests/images/carte/carte-lieu-initial.png" class="carte-fiche">
+                                    </label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <p id="message"></p>
+                        <p class="btn__soumission"><button type="button" id="btnSoumettre"
+                            class="btn-piger-chasse">Soumettre</button></p>
+
+
+                       <div class="div__partir-a-la-chasse div-liens-fiche">
+            
+                        <p class="bouton-redirection">
+                          <a class="redirection-lien" href="../galerie/index.html">Aller à la <span class="span__lienRedirection">
+                              Galerie des personnages</span>
+                            <svg width="44" height="14" viewBox="0 0 44 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M35.5392 13.6233C35.2695 13.3722 35.1401 13.0688 35.1508 12.713C35.1616 12.3572 35.3023 12.0538 35.5729 11.8027L39.3818 8.2556H2C1.61798 8.2556 1.29753 8.13507 1.03865 7.89399C0.779777 7.65291 0.650788 7.35492 0.651687 7C0.651687 6.64424 0.781125 6.34583 1.04 6.10475C1.29888 5.86368 1.61888 5.74356 2 5.74439H39.3818L35.5392 2.16592C35.2695 1.9148 35.1347 1.61638 35.1347 1.27067C35.1347 0.924962 35.2695 0.626965 35.5392 0.376681C35.8088 0.12556 36.1293 0 36.5005 0C36.8717 0 37.1917 0.12556 37.4605 0.376681L43.629 6.12108C43.7639 6.24664 43.8596 6.38266 43.9162 6.52915C43.9729 6.67563 44.0007 6.83259 43.9998 7C43.9998 7.16741 43.9715 7.32436 43.9149 7.47085C43.8582 7.61734 43.763 7.75336 43.629 7.87892L37.4268 13.6547C37.1796 13.8849 36.8708 14 36.5005 14C36.1302 14 35.8097 13.8744 35.5392 13.6233Z"
+                                fill="#1D3D23" />
+                            </svg>
+                          </a>
+                        </p>
+            
+                        <p class="bouton-redirection">
+                          <a class="redirection-lien" href="../carte/index.html">Consulter la <span class="span__lienRedirection">Carte</span>
+                            <svg width="44" height="14" viewBox="0 0 44 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M35.5392 13.6233C35.2695 13.3722 35.1401 13.0688 35.1508 12.713C35.1616 12.3572 35.3023 12.0538 35.5729 11.8027L39.3818 8.2556H2C1.61798 8.2556 1.29753 8.13507 1.03865 7.89399C0.779777 7.65291 0.650788 7.35492 0.651687 7C0.651687 6.64424 0.781125 6.34583 1.04 6.10475C1.29888 5.86368 1.61888 5.74356 2 5.74439H39.3818L35.5392 2.16592C35.2695 1.9148 35.1347 1.61638 35.1347 1.27067C35.1347 0.924962 35.2695 0.626965 35.5392 0.376681C35.8088 0.12556 36.1293 0 36.5005 0C36.8717 0 37.1917 0.12556 37.4605 0.376681L43.629 6.12108C43.7639 6.24664 43.8596 6.38266 43.9162 6.52915C43.9729 6.67563 44.0007 6.83259 43.9998 7C43.9998 7.16741 43.9715 7.32436 43.9149 7.47085C43.8582 7.61734 43.763 7.75336 43.629 7.87892L37.4268 13.6547C37.1796 13.8849 36.8708 14 36.5005 14C36.1302 14 35.8097 13.8744 35.5392 13.6233Z"
+                                fill="#1D3D23" />
+                            </svg>
+                          </a>
+                        </p>
+
+                        <p class="bouton-redirection">
+                            <a class="redirection-lien" href="../chasse/index.html">Voir progression sur la page <span class="span__lienRedirection">Chasse</span>
+                              <svg width="44" height="14" viewBox="0 0 44 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M35.5392 13.6233C35.2695 13.3722 35.1401 13.0688 35.1508 12.713C35.1616 12.3572 35.3023 12.0538 35.5729 11.8027L39.3818 8.2556H2C1.61798 8.2556 1.29753 8.13507 1.03865 7.89399C0.779777 7.65291 0.650788 7.35492 0.651687 7C0.651687 6.64424 0.781125 6.34583 1.04 6.10475C1.29888 5.86368 1.61888 5.74356 2 5.74439H39.3818L35.5392 2.16592C35.2695 1.9148 35.1347 1.61638 35.1347 1.27067C35.1347 0.924962 35.2695 0.626965 35.5392 0.376681C35.8088 0.12556 36.1293 0 36.5005 0C36.8717 0 37.1917 0.12556 37.4605 0.376681L43.629 6.12108C43.7639 6.24664 43.8596 6.38266 43.9162 6.52915C43.9729 6.67563 44.0007 6.83259 43.9998 7C43.9998 7.16741 43.9715 7.32436 43.9149 7.47085C43.8582 7.61734 43.763 7.75336 43.629 7.87892L37.4268 13.6547C37.1796 13.8849 36.8708 14 36.5005 14C36.1302 14 35.8097 13.8744 35.5392 13.6233Z"
+                                  fill="#1D3D23" />
+                              </svg>
+                            </a>
+                          </p>
+            
+                      </div>
+                    </form>
+
+                    
+
+                </div>
+
+            </div>
 
         </div>
+
+
     </aside>
 
 

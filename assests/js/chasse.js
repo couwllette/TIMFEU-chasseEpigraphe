@@ -50,20 +50,23 @@ const objChasse = {
 
         //---------- DISABLED BUTTON ----------
 
-        // document.querySelector('#btnDebuterChasse').disabled = true ;
-        // document.querySelector('#btnDemarrerNouvelleChasse').removeAttribute("disabled");
-
+        document.querySelector('#nb_indice_trouve').innerHTML = localStorage.nombre_indice_trouve;
         
         
 
     },
 
     initialiser: function () {
+
+        document.querySelector('#nb_indice_trouve').innerHTML = localStorage.nombre_indice_trouve;
     
+        document.querySelector('#btnDebuterChasse').disabled = false;
+
         if(localStorage.getItem("personnage_est_trouve") == "true" && localStorage.getItem("lieu_est_trouve") == "true" && localStorage.getItem("objet_est_trouve") == "true"){
 
             document.querySelector('#zoneChasseCompletee').removeAttribute("hidden");
             document.querySelector('div div.section-btns-liens-chasse').classList.add('cache');
+            document.querySelector('.entete-chasseEnCours h2').innerHTML = 'Chasse complétée';
 
         }
 
@@ -107,8 +110,13 @@ const objChasse = {
         localStorage.removeItem('objet_est_trouve');
         localStorage.removeItem('lieu_est_trouve');
 
-        localStorage.removeItem('nombre_indice_trouve');
-    
+        localStorage.setItem('nombre_indice_trouve', 0);
+        document.querySelector('#nb_indice_trouve').innerHTML = localStorage.nombre_indice_trouve;
+
+        document.querySelector('#btnDebuterChasse').removeAttribute('disabled');
+
+        document.querySelector('div div.section-btns-liens-chasse').classList.remove('cache');
+        document.querySelector('.entete-chasseEnCours h2').innerHTML = 'Chasse à compléter';
 
     }
 

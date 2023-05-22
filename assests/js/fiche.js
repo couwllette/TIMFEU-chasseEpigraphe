@@ -50,7 +50,7 @@ const objFicheArtsVisuels = {
 
 
         const refBaliseAudio = document.querySelector('audio');
-        
+
 
         refPrenom.innerHTML = objJSONepigraphes[intIdFicheCourante].PRENOM;
         refNom.innerHTML = objJSONepigraphes[intIdFicheCourante].NOM;
@@ -58,7 +58,7 @@ const objFicheArtsVisuels = {
         refTitreImage.innerHTML = objJSONepigraphes[intIdFicheCourante].IMAGE.TITRE;
         refCreditImage.innerHTML = objJSONepigraphes[intIdFicheCourante].IMAGE.CREDIT;
         refNotesBiographiques.innerHTML = objJSONepigraphes[intIdFicheCourante].BIOGRAPHIE;
-        refCarteZoom.src = "../assests/images/zoomGoogle_maps/"+intIdFicheCourante+"-zoom-google-maps.png";
+        refCarteZoom.src = "../assests/images/zoomGoogle_maps/" + intIdFicheCourante + "-zoom-google-maps.png";
         refArrondissement.innerHTML = objJSONepigraphes[intIdFicheCourante].ARRONDISSEMENT;
         refQuartier.innerHTML = objJSONepigraphes[intIdFicheCourante].QUARTIER;
         refAdresse.innerHTML = objJSONepigraphes[intIdFicheCourante].ADRESSE;
@@ -68,15 +68,15 @@ const objFicheArtsVisuels = {
         refTranscriptionAudio.innerHTML = objJSONepigraphes[intIdFicheCourante].AUDIO.TRANSCRIPTION;
         refCreditAudio.innerHTML = objJSONepigraphes[intIdFicheCourante].AUDIO.CREDIT;
         refDomaine.innerHTML = objJSONepigraphes[intIdFicheCourante].DOMAINE;
-        refUrlSonore.src = '../assests/images/img_cap/' +  intIdFicheCourante +'.jpg';
-        refEpigraphe.src = '../assests/images/images_epi/' +  intIdFicheCourante +'.svg'
+        refUrlSonore.src = '../assests/images/img_cap/' + intIdFicheCourante + '.jpg';
+        refEpigraphe.src = '../assests/images/images_epi/' + intIdFicheCourante + '.svg'
 
         refBaliseAudio.load();
 
         if (localStorage.id__personnage == undefined) {
 
-           // document.querySelector('#zoneAuncuneChasseEnCours').removeAttribute('hidden');
-        //   document.querySelector('#zoneChasseEnCours').hidden = true;
+            // document.querySelector('#zoneAuncuneChasseEnCours').removeAttribute('hidden');
+            //   document.querySelector('#zoneChasseEnCours').hidden = true;
 
         };
 
@@ -84,18 +84,18 @@ const objFicheArtsVisuels = {
         for (let valeurBouton of this.arrValeursBoutons) {
 
             if (localStorage.getItem(valeurBouton + "_est_trouve") == "true") {
-                document.querySelector('#'+valeurBouton).setAttribute('disabled', true);
-            } 
+                document.querySelector('#' + valeurBouton).setAttribute('disabled', true);
+            }
         };
 
-        if(localStorage.getItem("personnage_est_trouve") == "true" && localStorage.getItem("lieu_est_trouve") == "true" && localStorage.getItem("objet_est_trouve") == "true"){
+        if (localStorage.getItem("personnage_est_trouve") == "true" && localStorage.getItem("lieu_est_trouve") == "true" && localStorage.getItem("objet_est_trouve") == "true") {
 
             document.querySelector('#zoneChasseEnCours form').setAttribute("hidden", true);
-            
-            let messageReussi = document.createElement ('p');
-            messageReussi.innerHTML= "Bravo! Vous avez trouvé la phrase cachée.";
+
+            let messageReussi = document.createElement('div');
+            messageReussi.innerHTML = "<img src='../assests/images/medaillon.png' width='100px'><p>Bravo! Vous avez trouvé la phrase cachée. </p> <br> <p>Vous pouvez maintenant participer au Concours! Dirigez-vous sur la page <a style='text-decoration: none; color: #1D3D23; font-weight: bold;' href='../chasse/index.html'>Chasse</a>.</p>";
             document.querySelector('#zoneChasseEnCours').prepend(messageReussi);
-            
+
 
         }
 
@@ -108,7 +108,7 @@ const objFicheArtsVisuels = {
         //console.log('2FicheCourante: '+ intIdFicheCourante);
 
 
-        const arrBoutonsRadios = document.querySelector('input[name=formChasse]:checked');
+        const arrBoutonsRadios = document.querySelector('input[name=formSoumission]:checked');
         console.log(arrBoutonsRadios);
 
         console.log('personnage: ' + localStorage.id__personnage);
@@ -129,13 +129,26 @@ const objFicheArtsVisuels = {
 
                 nbIndiceTrouve++;
 
-                if (nbIndiceTrouve <= 3) {
+                if (nbIndiceTrouve < 3) {
 
                     localStorage.setItem('nombre_indice_trouve', nbIndiceTrouve);
                     document.querySelector('#nb_indice_trouve').innerHTML = localStorage.nombre_indice_trouve;
-                    
-                } 
 
+                }
+
+                if (nbIndiceTrouve == 3) {
+                    localStorage.setItem('nombre_indice_trouve', nbIndiceTrouve);
+                    document.querySelector('#nb_indice_trouve').innerHTML = localStorage.nombre_indice_trouve;
+
+                    setTimeout(function () {
+                        objFicheArtsVisuels.initialiser()
+                    }, 5000);
+                }
+
+
+
+
+                // setTimeout(objFicheArtsVisuels.initialiser(), 10000);
                 console.log(nbIndiceTrouve);
 
 
