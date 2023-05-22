@@ -282,17 +282,6 @@
 }
 
 
-.carte{
-    width: 60%;
-    margin-bottom: 10px;
-}
-@media (min-width:600px){
-    .carte{
-      
-        width: 20%;
-    margin: 0 10px;
-    }
-}
 .bouton-jeu {
     text-align: center;
     margin: 77px 0 0;
@@ -708,6 +697,18 @@ audio{
 }
 /* section soumettre la fiche */
 
+
+.carte{
+    width: 60%;
+    margin-bottom: 10px;
+}
+@media (min-width:600px){
+    .carte{
+      
+    width: 20%;
+    margin: 0 10px;
+    }
+}
 .soumission-fiche {
     background-color: #EFFBDD;
     border: #1D3D23 1px solid;
@@ -735,8 +736,15 @@ form ul {
     align-items: center;
 }
 
-input[name="formSoumission"]+label {
-    display: block;
+/*BOUTONS CARTES*/
+@media (max-width:600px){
+    .liste-cartes{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+}
+
+input[name="formSoumission"]+label{
     align-items: center;
     justify-content: center;
     
@@ -748,11 +756,39 @@ input[name="formSoumission"]+label img {
     
 }
 
-input[name="formSoumission"]:checked+label{
-    border: 5px red solid;
+input[name="formSoumission"]:checked+label img{
+    border: 4px #1D3D23 solid;
     padding: 0;
     margin: 0;
+    width: 100%;
+    border-radius: 9%;
 }
+
+
+@media (min-width:600px){
+    input[name="formSoumission"]+label{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+input[name="formSoumission"]+label img {
+    width: 80%;
+    
+    
+}
+
+input[name="formSoumission"]:checked+label img{
+    border: 4px #1D3D23 solid;
+    border-radius: 9%;
+    padding: 0;
+    margin: 14px;
+    width: 80%;
+}
+}
+
+
 
 /*bouton redirecton*/
 
