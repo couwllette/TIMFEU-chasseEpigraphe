@@ -75,8 +75,8 @@ const objFicheArtsVisuels = {
 
         if (localStorage.id__personnage == undefined) {
 
-            // document.querySelector('#zoneAuncuneChasseEnCours').removeAttribute('hidden');
-            //   document.querySelector('#zoneChasseEnCours').hidden = true;
+            document.querySelector('#zoneAuncuneChasseEnCours').removeAttribute('hidden');
+              document.querySelector('#zoneChasseEnCours').hidden = true;
 
         };
 
@@ -142,7 +142,7 @@ const objFicheArtsVisuels = {
 
                     setTimeout(function () {
                         objFicheArtsVisuels.initialiser()
-                    }, 5000);
+                    }, 2000);
                 }
 
 
