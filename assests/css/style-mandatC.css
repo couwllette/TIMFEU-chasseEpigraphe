@@ -1144,7 +1144,7 @@ input[name="formSoumission"]+label img {
     font-size: 1.4rem;
 }
 
-
+/* ---------------- SECTION CARTE -------------------------- */
 
 .section-carte{
     background-color: #EFFBDD;
@@ -1157,4 +1157,17 @@ input[name="formSoumission"]+label img {
 .section-carte p{
     margin: 10px;
     text-align: center;
+}
+
+.h2--carte{
+    font-size: 1.4rem; 
+    font-weight: 400; 
+    font-family: 'Lexend Zetta', sans-serif;
+}
+@media (min-width:600px) {
+    .h2--carte{
+        font-size: 1.6rem; 
+        font-weight: 400; 
+        font-family: 'Lexend Zetta', sans-serif;
+    }
 }

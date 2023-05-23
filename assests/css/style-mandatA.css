@@ -40,6 +40,16 @@
     margin: 0 auto;
 }
 
+.main--accueil{
+    line-height: 200%;
+    font-size: 1.4rem;
+}
+
+@media(min-width:600px){
+    .main--accueil{
+        font-size: 1.6rem;
+    }
+}
 
 /* ------------------------------------------------------------------------------------------------------------------ */
 /* MAIN */
